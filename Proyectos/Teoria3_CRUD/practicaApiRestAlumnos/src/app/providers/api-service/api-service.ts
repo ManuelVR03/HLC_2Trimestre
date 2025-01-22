@@ -10,89 +10,109 @@ import { Alumno } from 'src/app/modelo/Alumno';
 export class ApiServiceProvider {
 
 
-private URL = "http://localhost:3000";
+    private URL = "http://localhost:3000";
 
 
-constructor(public http: HttpClient) {
+    constructor(public http: HttpClient) {
 
-}
-
-
-getAlumnos(): Promise<Alumno[]> {
-
-     let promise = new Promise<Alumno[]>((resolve, reject) => {
-
-         this.http.get(this.URL + "/alumnos").toPromise()
-
-             .then((data: any) => {
-
-                 let alumnos = new Array<Alumno>();
-
-                 data.forEach((alumno: Alumno) => {
-
-                     console.log(alumno);
-
-                     alumnos.push(alumno);
-
-                 });
-
-                 resolve(alumnos);
-
-             })
-
-             .catch((error: Error) => {
-
-                 reject(error.message);
-
-             });
-
-     });
-
-     return promise;
-
-}//end_getAlumnos
+    }
 
 
-/*
+    getAlumnos(): Promise<Alumno[]> {
 
-Este método manda una solicitud de borrado a la Api del usuario con un id determinado.
+        let promise = new Promise<Alumno[]>((resolve, reject) => {
 
-Si el borrado va bien se sale son resolve devolviendo true.
+            this.http.get(this.URL + "/alumnos").toPromise()
 
-Si el borrado va mal se sale con reject, devolviendo el mensaje de error que nos llega
+                .then((data: any) => {
 
-*/
+                    let alumnos = new Array<Alumno>();
+
+                    data.forEach((alumno: Alumno) => {
+
+                        console.log(alumno);
+
+                        alumnos.push(alumno);
+
+                    });
+
+                    resolve(alumnos);
+
+                })
+
+                .catch((error: Error) => {
+
+                    reject(error.message);
+
+                });
+
+        });
+
+        return promise;
+
+    }//end_getAlumnos
 
 
-eliminarAlumno(id: number): Promise<Boolean> {
+    /*
+    
+    Este método manda una solicitud de borrado a la Api del usuario con un id determinado.
+    
+    Si el borrado va bien se sale son resolve devolviendo true.
+    
+    Si el borrado va mal se sale con reject, devolviendo el mensaje de error que nos llega
+    
+    */
 
-     let promise = new Promise<Boolean>((resolve, reject) => {
 
-         this.http.delete(this.URL + "/alumnos/" + id).toPromise().then(
+    eliminarAlumno(id: number): Promise<Boolean> {
 
-             (data: any) => { // Success
+        let promise = new Promise<Boolean>((resolve, reject) => {
 
-                 console.log(data)
+            this.http.delete(this.URL + "/alumnos/" + id).toPromise().then(
 
-                 resolve(true);
+                (data: any) => { // Success
 
-             }
+                    console.log(data)
 
-         )
+                    resolve(true);
 
-             .catch((error: Error) => {
+                }
 
-                 console.log(error.message);
+            )
 
-                 reject(error.message);
+                .catch((error: Error) => {
 
-             });
+                    console.log(error.message);
 
-     });
+                    reject(error.message);
 
-     return promise;
+                });
 
-}//end_eliminar_alumno
+        });
+
+        return promise;
+
+    }//end_eliminar_alumno
+
+    modificarAlumno(nuevosDatosAlumno: Alumno): Promise<Alumno> {
+        let promise = new Promise<Alumno>((resolve, reject) => {
+            var header = { "headers": { "Content-Type": "application/json" } };
+            let datos = JSON.stringify(nuevosDatosAlumno);
+            this.http.put(this.URL + "/alumnos/" + nuevosDatosAlumno.id,
+                datos,
+                header).toPromise().then(
+                    (data: any) => { // Success
+                        let alumno: Alumno;
+                        alumno = data;
+                        resolve(alumno);
+                    }
+                )
+                .catch((error: Error) => {
+                    reject(error.message);
+                });
+        });
+        return promise;
+    }//end_modificar_alumno
 
 
 }//end_class
