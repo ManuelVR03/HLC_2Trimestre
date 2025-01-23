@@ -12,6 +12,9 @@ import { AlertController } from '@ionic/angular';
 export class HomePage implements OnInit {
 
   public alumnos = new Array<Alumno>();
+  public currentPage = 1;
+  public pageSize = 10;
+  public totalAlumnos = new Array<Alumno>();
 
   constructor(private apiService: ApiServiceProvider,
     public alertController: AlertController
@@ -20,14 +23,11 @@ export class HomePage implements OnInit {
 
 
   ngOnInit(): void {
-    this.apiService.getAlumnos()
-      .then((alumnos: Alumno[]) => {
-        this.alumnos = alumnos;
-        console.log(this.alumnos);
-      })
-      .catch((error: string) => {
-        console.log(error);
-      });
+
+    this.loadAlumnos();
+
+    this.totalAlumno();
+
   }
 
   /*
@@ -58,9 +58,24 @@ export class HomePage implements OnInit {
 
   }//end_eliminar_alumno
 
-  eliminarTodos() {
-    for (let i = 0; i < this.alumnos.length; i++)
-      this.eliminarAlumno(i);
+  async eliminarTodos() {
+    const alert = await this.alertController.create({
+      header: 'Estás seguro?',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel'
+        },
+        {
+          text: 'Ok',
+          handler: () => {
+            for (let i = 0; i < this.alumnos.length; i++)
+              this.eliminarAlumno(i);
+          }
+        }
+      ]
+    });
+    await alert.present();
   }
 
   async modificarAlumno(indice: number) {
@@ -248,5 +263,103 @@ export class HomePage implements OnInit {
     await alert.present();
 
   }//end_modificarAlumno
+
+  totalAlumno(): void {
+
+    this.apiService.getAlumnos()
+
+      .then((alumnos: Alumno[]) => {
+
+        this.totalAlumnos = alumnos;
+
+      })
+
+      .catch((error: string) => {
+
+        console.log(error);
+
+      });
+
+  }
+
+  loadAlumnos(): void {
+
+    this.apiService.getAlumnosPaginados((this.currentPage - 1) * 10, ((this.currentPage - 1) * 10) + this.pageSize)
+
+      .then((alumnos: Alumno[]) => {
+
+        this.alumnos = alumnos; // Sobrescribe en la primera página
+
+        console.log(this.alumnos);
+
+      })
+
+      .catch((error: string) => {
+
+        console.log(error);
+
+      });
+
+  }
+
+
+
+
+
+  goToFirstPage(): void {
+
+    this.currentPage = 1;
+
+    this.loadAlumnos();
+
+  }
+
+
+
+
+
+  goToPreviousPage(): void {
+
+    if (this.currentPage > 1) {
+
+      this.currentPage--;
+
+      this.loadAlumnos();
+
+    }
+
+  }
+
+
+
+
+
+  goToNextPage(): void {
+
+    this.currentPage++;
+
+    this.loadAlumnos();
+
+  }
+
+
+
+
+
+  goToLastPage(): void {
+
+    // Puedes implementar una llamada adicional para determinar la cantidad total de páginas.
+
+    console.log(this.totalAlumnos.length);
+
+    console.log(this.pageSize);
+
+    this.currentPage = Math.ceil(this.totalAlumnos.length / this.pageSize);
+
+    this.loadAlumnos();
+
+  }
+
+
 
 }//end_class

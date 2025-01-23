@@ -114,5 +114,22 @@ export class ApiServiceProvider {
         return promise;
     }//end_modificar_alumno
 
-
+    getAlumnosPaginados(start: number, end: number): Promise<Alumno[]> {
+        return new Promise<Alumno[]>((resolve, reject) => {
+            this.http.get(`${this.URL}/alumnos?_start=${start}&_end=${end}&_sort=id`).toPromise()
+                .then((data: any) => {
+                    let alumnos = new Array<Alumno>();
+                    console.log(`${this.URL}/alumnos?_start=${start}&_end=${end}`);
+                    data.forEach((alumno: Alumno) => {
+                        alumnos.push(alumno);
+                    });
+                    resolve(alumnos);
+                   
+                })
+                .catch((error: Error) => {
+                    reject(error.message);
+                });
+        });
+    }//end_getAlumnosPaginados
+    
 }//end_class

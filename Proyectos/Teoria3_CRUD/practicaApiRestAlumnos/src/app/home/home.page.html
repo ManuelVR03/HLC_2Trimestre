@@ -1,12 +1,21 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Alumnos
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content>
+  <ion-toolbar>
+ 
+    <ion-title>
+ 
+      Alumnos
+ 
+    </ion-title>
+ 
+  </ion-toolbar>
+ 
+ </ion-header>
+ 
+ 
+ 
+ <ion-content>
+
   <ion-grid>
     <ion-row>
       <ion-col size="4"></ion-col>
@@ -17,23 +26,71 @@
       <ion-col size="4"></ion-col>
     </ion-row>
   </ion-grid>
-  <ion-card *ngFor="let alumno of alumnos; let indice=index;">
+ 
+  <ion-card *ngFor="let alumno of alumnos; let indice = index;">
+ 
     <ion-grid>
+ 
       <ion-row>
-        <ion-col size=8>{{alumno.last_name}}, {{alumno.first_name}}</ion-col>
+ 
+        <ion-col size="8">{{alumno.last_name}}, {{alumno.first_name}}</ion-col>
+ 
         <ion-col size=1></ion-col>
+ 
         <ion-col size=1>
+ 
           <button ion-button icon-only (click)="modificarAlumno(indice)" danger>
+ 
             <ion-icon name="create-outline"></ion-icon>
+ 
           </button>
+ 
         </ion-col>
-        <ion-col size=1>
+ 
+        <ion-col size="1">
+ 
           <button ion-button icon-only (click)="eliminarAlumno(indice)" danger>
-            <ion-icon name="trash-outline"></ion-icon>
+ 
+            <ion-icon name="trash"></ion-icon>
+ 
           </button>
+ 
         </ion-col>
-        <ion-col size=1></ion-col>
+ 
+        <ion-col size="1"></ion-col>
+ 
       </ion-row>
+ 
     </ion-grid>
+ 
   </ion-card>
-</ion-content>
+ 
+ 
+ 
+  <ion-footer>
+ 
+    <ion-toolbar>
+ 
+      <ion-buttons slot="start">
+ 
+        <ion-button (click)="goToFirstPage()">Primera</ion-button>
+ 
+        <ion-button (click)="goToPreviousPage()">Anterior</ion-button>
+ 
+      </ion-buttons>
+ 
+      <ion-title>Página {{currentPage}}</ion-title>
+ 
+      <ion-buttons slot="end">
+ 
+        <ion-button (click)="goToNextPage()">Siguiente</ion-button>
+ 
+        <ion-button (click)="goToLastPage()">Última</ion-button>
+ 
+      </ion-buttons>
+ 
+    </ion-toolbar>
+ 
+  </ion-footer>
+ 
+ </ion-content>
