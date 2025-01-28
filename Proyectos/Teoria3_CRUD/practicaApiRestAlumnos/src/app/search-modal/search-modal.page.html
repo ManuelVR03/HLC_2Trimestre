@@ -1,0 +1,47 @@
+<ion-header>
+
+  <ion-toolbar>
+ 
+    <ion-title>Búsqueda</ion-title>
+ 
+    <ion-buttons slot="end">
+ 
+      <ion-button (click)="dismissModal()"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
+ 
+    </ion-buttons>
+ 
+  </ion-toolbar>
+ 
+ </ion-header>
+ 
+ 
+ 
+ <ion-content>
+ 
+  <ion-item>
+ 
+    <ion-label position="floating">Apellidos</ion-label>
+ 
+    <ion-input [(ngModel)]="lastName" placeholder="Introduce los apellidos"></ion-input>
+ 
+  </ion-item>
+ 
+  <ion-item>
+ 
+    <ion-label position="floating">Nombre</ion-label>
+ 
+    <ion-input [(ngModel)]="firstName" placeholder="Introduce el nombre"></ion-input>
+ 
+  </ion-item>
+
+  <ion-item>
+ 
+    <ion-label position="floating">Ciudad</ion-label>
+ 
+    <ion-input [(ngModel)]="ciudad" placeholder="Introduce una ciudad"></ion-input>
+ 
+  </ion-item>
+ 
+  <ion-button expand="block" (click)="search()">Buscar</ion-button>
+ 
+ </ion-content>

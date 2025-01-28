@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ApiServiceProvider } from 'src/app/providers/api-service/api-service';
 import { Alumno } from '../modelo/Alumno';
 import { AlertController } from '@ionic/angular';
+import { ModalController } from '@ionic/angular';
+import { SearchModalPage } from '../search-modal/search-modal.page';
+import { HttpClient } from '@angular/common/http';
+
+
 
 @Component({
   selector: 'app-home',
@@ -15,9 +20,11 @@ export class HomePage implements OnInit {
   public currentPage = 1;
   public pageSize = 10;
   public totalAlumnos = new Array<Alumno>();
+  buscando: boolean = false;
 
   constructor(private apiService: ApiServiceProvider,
-    public alertController: AlertController
+    public alertController: AlertController,
+    private modalCtrl: ModalController, private http: HttpClient
   ) {
   }
 
@@ -284,7 +291,9 @@ export class HomePage implements OnInit {
 
   loadAlumnos(): void {
 
-    this.apiService.getAlumnosPaginados((this.currentPage - 1) * 10, ((this.currentPage - 1) * 10) + this.pageSize)
+    this.buscando = false;
+
+    this.apiService.getAlumnosPaginados((this.currentPage - 1) * this.pageSize, ((this.currentPage - 1) * this.pageSize) + this.pageSize)
 
       .then((alumnos: Alumno[]) => {
 
@@ -301,9 +310,6 @@ export class HomePage implements OnInit {
       });
 
   }
-
-
-
 
 
   goToFirstPage(): void {
@@ -360,6 +366,72 @@ export class HomePage implements OnInit {
 
   }
 
+
+  async abrirModalBusqueda() {
+
+    const modal = await this.modalCtrl.create({
+ 
+      component: SearchModalPage,
+ 
+    });
+ 
+ 
+ 
+    await modal.present();
+ 
+ 
+ 
+    // Recoge los datos al cerrar el modal
+ 
+    const { data } = await modal.onDidDismiss();
+ 
+    if (data) {
+ 
+      const { firstName, lastName, ciudad } = data;
+ 
+ 
+ 
+      // Llama al servicio para buscar los alumnos
+ 
+      this.buscarAlumnos(firstName, lastName, ciudad);
+ 
+    }
+ 
+  }
+ 
+ 
+ 
+  // Llama al servicio para buscar alumnos
+ 
+  buscarAlumnos(nombre: string, apellido: string, ciudad: string) {
+
+    this.buscando = true;
+ 
+    this.apiService
+ 
+      .buscarAlumnosPorNombreApellido(nombre, apellido, ciudad)
+ 
+      .then((resultados) => {
+ 
+        if (resultados.length == this.totalAlumnos.length)
+
+          this.loadAlumnos();
+
+        else
+
+          this.alumnos = resultados; // Almacena los resultados en la lista
+ 
+        console.log('Resultados encontrados:', this.alumnos);
+ 
+      })
+ 
+      .catch((error) => {
+ 
+        console.error('Error al buscar alumnos:', error);
+ 
+      });
+ 
+  }
 
 
 }//end_class

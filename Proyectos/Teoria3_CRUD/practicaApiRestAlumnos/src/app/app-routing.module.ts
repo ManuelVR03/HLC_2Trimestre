@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'search-modal',
+    loadChildren: () => import('./search-modal/search-modal.module').then( m => m.SearchModalPageModule)
+  },
 ];
 
 @NgModule({

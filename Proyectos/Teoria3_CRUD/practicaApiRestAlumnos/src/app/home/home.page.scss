@@ -1,6 +1,5 @@
 #container {
   text-align: center;
-
   position: absolute;
   left: 0;
   right: 0;
@@ -16,12 +15,64 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+
+img {
+  width: 20%;
+  height: 20%;
+}
+
+ion-header {
+  
+}
+
+/* Colores del encabezado */
+ion-header, ion-toolbar {
+  --background: #003366; /* Azul oscuro */
+  --color: #ffffff; /* Texto en blanco */  
+}
+
+/* Color de los iconos y botones en la barra de herramientas */
+ion-toolbar ion-buttons ion-button {
+  --color: white; /* Iconos en blanco */
+}
+
+/* Color de fondo de las tarjetas de los alumnos */
+ion-card {
+  --background: #f2f2f2; /* Gris claro */
+  --color: #333333; /* Texto en gris oscuro */
+}
+
+/* Color de los botones de eliminar */
+ion-button[color="danger"] {
+  --background: #cc0000; /* Rojo */
+  --color: white;
+}
+
+/* Color de los botones del pie de página */
+ion-footer {
+  --background: #003366; /* Azul oscuro */
+  --color: white;
+}
+
+ion-footer ion-button {
+  --color: white;
+}
+
+/* Asegura que el ion-title esté centrado en el footer */
+ion-footer ion-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-footer ion-title {
+  flex-grow: 1;
+  text-align: center;
 }
