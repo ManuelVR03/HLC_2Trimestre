@@ -21,6 +21,7 @@ export class HomePage implements OnInit {
   public pageSize = 10;
   public totalAlumnos = new Array<Alumno>();
   buscando: boolean = false;
+  public total: Number = 0;
 
   constructor(private apiService: ApiServiceProvider,
     public alertController: AlertController,
@@ -279,6 +280,8 @@ export class HomePage implements OnInit {
 
         this.totalAlumnos = alumnos;
 
+        this.total = this.alumnos.length;
+
       })
 
       .catch((error: string) => {
@@ -370,49 +373,49 @@ export class HomePage implements OnInit {
   async abrirModalBusqueda() {
 
     const modal = await this.modalCtrl.create({
- 
+
       component: SearchModalPage,
- 
+
     });
- 
- 
- 
+
+
+
     await modal.present();
- 
- 
- 
+
+
+
     // Recoge los datos al cerrar el modal
- 
+
     const { data } = await modal.onDidDismiss();
- 
+
     if (data) {
- 
+
       const { firstName, lastName, ciudad } = data;
- 
- 
- 
+
+
+
       // Llama al servicio para buscar los alumnos
- 
+
       this.buscarAlumnos(firstName, lastName, ciudad);
- 
+
     }
- 
+
   }
- 
- 
- 
+
+
+
   // Llama al servicio para buscar alumnos
- 
+
   buscarAlumnos(nombre: string, apellido: string, ciudad: string) {
 
     this.buscando = true;
- 
+
     this.apiService
- 
+
       .buscarAlumnosPorNombreApellido(nombre, apellido, ciudad)
- 
+
       .then((resultados) => {
- 
+
         if (resultados.length == this.totalAlumnos.length)
 
           this.loadAlumnos();
@@ -420,17 +423,180 @@ export class HomePage implements OnInit {
         else
 
           this.alumnos = resultados; // Almacena los resultados en la lista
- 
+
         console.log('Resultados encontrados:', this.alumnos);
- 
+
       })
- 
+
       .catch((error) => {
- 
+
         console.error('Error al buscar alumnos:', error);
- 
+
       });
- 
+
+  }
+
+  async insertarAlumno() {
+
+    const alert = await this.alertController.create({
+
+      header: 'Insertar Alumno',
+
+      inputs: [
+
+        {
+
+          name: 'first_name',
+
+          type: 'text',
+
+          placeholder: 'Nombre'
+
+        },
+
+        {
+
+          name: 'last_name',
+
+          type: 'text',
+
+          placeholder: 'Apellido'
+
+        },
+
+        {
+
+          name: 'email',
+
+          type: 'text',
+
+          placeholder: 'Email'
+
+        },
+
+        {
+
+          name: 'gender',
+
+          type: 'text',
+
+          placeholder: 'Male / Female'
+
+        },
+
+        {
+
+          name: 'avatar',
+
+          type: 'text',
+
+          placeholder: 'Avatar'
+
+        },
+
+        {
+
+          name: 'address',
+
+          type: 'text',
+
+          placeholder: 'Address'
+
+        },
+
+        {
+
+          name: 'city',
+
+          type: 'text',
+
+          placeholder: 'City'
+
+        },
+
+        {
+
+          name: 'postalCode',
+
+          type: 'text',
+
+          placeholder: 'PostalCode'
+
+        }
+
+      ],
+
+      buttons: [
+
+        {
+
+          text: 'Cancelar',
+
+          role: 'cancel',
+
+          handler: () => {
+
+            console.log('Cancelado');
+
+          }
+
+        },
+
+        {
+
+          text: 'Insertar',
+
+          handler: (data) => {            
+
+            const nuevoAlumno: Alumno = {
+
+              id: this.totalAlumnos[this.totalAlumnos.length - 1].id,
+
+              first_name: data.first_name,
+
+              last_name: data.last_name,
+
+              email: data.email,
+
+              gender: data.gender,
+      
+              avatar: data.avatar,
+      
+              address: data.address,
+      
+              city: data.city,
+      
+              postalCode: data.postalCode
+
+            };
+
+            this.apiService.insertarAlumno(nuevoAlumno)
+
+              .then(() => {
+
+                console.log("Alumno insertado correctamente");
+
+                this.loadAlumnos();
+
+              })
+
+              .catch((error) => {
+
+                console.log("Error al insertar: " + error);
+
+              });
+
+          }
+
+        }
+
+      ]
+
+    });
+
+
+    await alert.present();
+
   }
 
 
