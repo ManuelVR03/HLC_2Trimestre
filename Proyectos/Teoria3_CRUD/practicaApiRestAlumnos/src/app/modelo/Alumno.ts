@@ -1,7 +1,7 @@
 import { AlumnoInterface } from "./AlumnoInterface";
 
 export class Alumno implements AlumnoInterface {
-    constructor(public id: number,
+    constructor(public id: string,
         public gender: string,
         public first_name: string,
         public last_name: string,

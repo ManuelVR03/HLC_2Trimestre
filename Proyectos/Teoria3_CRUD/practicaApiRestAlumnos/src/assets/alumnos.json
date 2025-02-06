@@ -10411,6 +10411,17 @@
       "avatar": "https://robohash.org/rerumplaceatvelit.png?size=50x50&set=set1",
       "address": "0622 Haas Way",
       "city": "Limonade"
+    },
+    {
+      "id": "1001",
+      "first_name": "Manuel",
+      "last_name": "Verdejo Ramírez",
+      "email": "manuel.verdejo.ramirez@gmail.com",
+      "gender": "Male",
+      "avatar": "Http:png",
+      "address": "Avenida San Juan De La Salle",
+      "city": "Sevilla",
+      "postalCode": "41008"
     }
   ]
 }

@@ -64,7 +64,7 @@ export class ApiServiceProvider {
     */
 
 
-    eliminarAlumno(id: number): Promise<Boolean> {
+    eliminarAlumno(id: string): Promise<Boolean> {
 
         let promise = new Promise<Boolean>((resolve, reject) => {
 
@@ -116,7 +116,7 @@ export class ApiServiceProvider {
 
     getAlumnosPaginados(start: number, end: number): Promise<Alumno[]> {
         return new Promise<Alumno[]>((resolve, reject) => {
-            this.http.get(`${this.URL}/alumnos?_start=${start}&_end=${end}&_sort=id`).toPromise()
+            this.http.get(`${this.URL}/alumnos?_start=${start}&_end=${end}&_sort=last_name`).toPromise()
                 .then((data: any) => {
                     let alumnos = new Array<Alumno>();
                     console.log(`${this.URL}/alumnos?_start=${start}&_end=${end}`);

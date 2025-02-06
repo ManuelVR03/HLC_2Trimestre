@@ -546,11 +546,13 @@ export class HomePage implements OnInit {
 
           text: 'Insertar',
 
-          handler: (data) => {            
+          handler: (data) => { 
+            
+            let nextId = Math.max(...this.totalAlumnos.map(alumno => Number(alumno.id))) + 1;
 
             const nuevoAlumno: Alumno = {
 
-              id: this.totalAlumnos[this.totalAlumnos.length - 1].id,
+              id: nextId.toString(),
 
               first_name: data.first_name,
 
