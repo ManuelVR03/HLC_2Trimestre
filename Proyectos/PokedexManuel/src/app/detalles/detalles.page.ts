@@ -14,8 +14,19 @@ export class DetallesPage{
 
   constructor(private modalCtrl: ModalController) { }
 
+  ngOnInit() {
+    if (this.pokemon) {
+      this.playPokemonCry(this.pokemon.id);
+    }
+  }
+
   dismissModal(){
     this.modalCtrl.dismiss();
+  }
+
+  playPokemonCry(pokemonId: number) {
+      const audio = new Audio(`https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${pokemonId}.ogg`);
+      audio.play().catch(error => console.error('Error al reproducir el sonido:', error));
   }
 
 }
