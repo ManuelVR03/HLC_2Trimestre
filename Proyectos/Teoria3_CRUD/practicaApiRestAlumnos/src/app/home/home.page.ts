@@ -1,12 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceProvider } from 'src/app/providers/api-service/api-service';
 import { Alumno } from '../modelo/Alumno';
-import { AlertController } from '@ionic/angular';
-import { ModalController } from '@ionic/angular';
 import { SearchModalPage } from '../search-modal/search-modal.page';
 import { HttpClient } from '@angular/common/http';
+import { Storage } from '@ionic/storage-angular';
+import { AlertController, ModalController, NavController, ToastController } from '@ionic/angular';
 
+enum StorageTypeEnum {
 
+  JSON_SERVER = 'JSON_SERVER',
+
+  FIREBASE = 'FIREBASE'
+
+}
 
 @Component({
   selector: 'app-home',
@@ -22,17 +28,32 @@ export class HomePage implements OnInit {
   public totalAlumnos = new Array<Alumno>();
   buscando: boolean = false;
   public total: Number = 0;
+  storageType: string = StorageTypeEnum.JSON_SERVER;
 
   constructor(private apiService: ApiServiceProvider,
     public alertController: AlertController,
-    private modalCtrl: ModalController, private http: HttpClient
+    private modalCtrl: ModalController, private http: HttpClient,
+    private storage: Storage, private toastController: ToastController
   ) {
   }
 
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
 
-    this.loadAlumnos();
+    await this.storage.create(); // Asegura que el Storage está inicializado
+
+    this.storage.get('storageType').then((val: any) => {
+
+      this.storageType = val || StorageTypeEnum.JSON_SERVER;
+
+      this.loadAlumnos();
+
+    }).catch(() => {
+
+      //this.presentToast("Error al recuperar la opción de conexión");
+      this.presentToastWithOptions("Error al recuperar la opción de conexión");
+
+    });
 
     this.totalAlumno();
 
@@ -294,9 +315,9 @@ export class HomePage implements OnInit {
 
   loadAlumnos(): void {
 
-    this.buscando = false;
+    if (this.storageType === StorageTypeEnum.JSON_SERVER) {
 
-    this.apiService.getAlumnosPaginados((this.currentPage - 1) * this.pageSize, ((this.currentPage - 1) * this.pageSize) + this.pageSize)
+    this.apiService.getAlumnosPaginados((this.currentPage-1)*10, ((this.currentPage-1)*10) + this.pageSize)
 
       .then((alumnos: Alumno[]) => {
 
@@ -312,7 +333,13 @@ export class HomePage implements OnInit {
 
       });
 
-  }
+    } else {
+
+      this.presentToastWithOptions("Aún no se ha implementado la conexión a Firebase");
+
+    }
+
+  } 
 
 
   goToFirstPage(): void {
@@ -546,8 +573,8 @@ export class HomePage implements OnInit {
 
           text: 'Insertar',
 
-          handler: (data) => { 
-            
+          handler: (data) => {
+
             let nextId = Math.max(...this.totalAlumnos.map(alumno => Number(alumno.id))) + 1;
 
             const nuevoAlumno: Alumno = {
@@ -561,13 +588,13 @@ export class HomePage implements OnInit {
               email: data.email,
 
               gender: data.gender,
-      
+
               avatar: data.avatar,
-      
+
               address: data.address,
-      
+
               city: data.city,
-      
+
               postalCode: data.postalCode
 
             };
@@ -600,6 +627,56 @@ export class HomePage implements OnInit {
     await alert.present();
 
   }
+
+  guardarOpcion(event: any) {
+
+    this.storage.set('storageType', event.detail.value).then(() => {
+ 
+      this.storageType = event.detail.value;
+ 
+      this.loadAlumnos();
+ 
+    });
+ 
+  }
+
+  async presentToast(message: string) {
+
+    const toast = await this.toastController.create({ message, duration: 2000 });
+ 
+    await toast.present();
+ 
+  }
+
+  async presentToastWithOptions(message: string) {
+
+    const toast = await this.toastController.create({
+ 
+      message: message,
+ 
+      duration: 3000,
+ 
+      position: 'top',
+ 
+      buttons: [
+ 
+        {
+ 
+          text: 'Cerrar',
+ 
+          role: 'cancel'
+ 
+        }
+ 
+      ]
+ 
+    });
+ 
+    toast.present();
+ 
+  }
+ 
+ 
 
 
 }//end_class

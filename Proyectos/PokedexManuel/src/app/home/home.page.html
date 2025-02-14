@@ -3,7 +3,7 @@
     <ion-title slot="start">
       Pokedex by <strong>Manuel Verdejo</strong>
     </ion-title>
-    <ion-searchbar slot="end" [(ngModel)]="buscado" (keyup.enter)="buscarPokemon(buscado)" (ionClear)="loadPokemons()"></ion-searchbar>
+    <ion-searchbar slot="end" [(ngModel)]="buscado" (ionInput)="buscarPokemon(buscado)"></ion-searchbar>
   </ion-toolbar>
 </ion-header>
 

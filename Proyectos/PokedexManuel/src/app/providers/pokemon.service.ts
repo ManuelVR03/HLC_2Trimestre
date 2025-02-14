@@ -18,7 +18,7 @@ export class PokemonServiceProvider {
     }
 
     nombresPokemons(): Promise<String[]> {
-        
+
         let promise = new Promise<String[]>((resolve, reject) => {
 
             this.http.get(this.URL + "/pokemon?limit=1304").toPromise()
@@ -81,10 +81,10 @@ export class PokemonServiceProvider {
                                 });
 
                                 let img = data.sprites.other?.["showdown"]?.front_default ||
-                                data.sprites.versions?.["generation-v"]?.["black-white"]?.animated?.front_default ||
-                                data.sprites.other?.["official-artwork"]?.front_default ||
-                                data.sprites.other?.["home"]?.front_default ||
-                                data.sprites.front_default;
+                                    data.sprites.versions?.["generation-v"]?.["black-white"]?.animated?.front_default ||
+                                    data.sprites.other?.["official-artwork"]?.front_default ||
+                                    data.sprites.other?.["home"]?.front_default ||
+                                    data.sprites.front_default;
 
                                 let pokemon = new Pokemon(data.id, data.name, img, tipos, habilidades, data.weight, data.height);
 
@@ -102,7 +102,7 @@ export class PokemonServiceProvider {
 
                     });
 
-                    
+
                     resolve(pokemons);
 
 
@@ -120,52 +120,62 @@ export class PokemonServiceProvider {
 
     }//end_getPokemons
 
-    buscarPokemon(buscado: string): Promise<Pokemon[]> {
+    buscarPokemon(buscado: String[]): Promise<Pokemon[]> {
 
         let promise = new Promise<Pokemon[]>((resolve, reject) => {
 
-            this.http.get(this.URL + "/pokemon/" + buscado).toPromise()
+            let pokemons = new Array<Pokemon>();
 
-                .then((data: any) => {
+            for (let i = 0; i < buscado.length; i++) {
 
-                    let tipos = new Array<string>();
+                this.http.get(this.URL + "/pokemon/" + buscado[i]).toPromise()
 
-                    data.types.forEach((tipo: any) => {
+                    .then((data: any) => {
 
-                        tipos.push(tipo.type.name);
+                        let tipos = new Array<string>();
+
+                        data.types.forEach((tipo: any) => {
+
+                            tipos.push(tipo.type.name);
+
+                        });
+
+                        let habilidades = new Array<string>();
+
+                        data.abilities.forEach((habilidad: any) => {
+
+                            habilidades.push(habilidad.ability.name);
+
+                        });
+
+                        let img = data.sprites.other?.["showdown"]?.front_default ||
+                            data.sprites.versions?.["generation-v"]?.["black-white"]?.animated?.front_default ||
+                            data.sprites.other?.["official-artwork"]?.front_default ||
+                            data.sprites.other?.["home"]?.front_default ||
+                            data.sprites.front_default;
+
+                        let pokemon = new Pokemon(data.id, data.name, img, tipos, habilidades, data.weight, data.height);
+
+                        pokemons.push(pokemon);
+
+                        pokemons.sort((a, b) => a.id - b.id);
+
+                    })
+
+                    .catch((error: Error) => {
+
+                        reject(error.message);
 
                     });
 
-                    let habilidades = new Array<string>();
+            }
 
-                    data.abilities.forEach((habilidad: any) => {
-
-                        habilidades.push(habilidad.ability.name);
-
-                    });
-
-                    let img = data.sprites.other?.["showdown"]?.front_default ||
-                    data.sprites.versions?.["generation-v"]?.["black-white"]?.animated?.front_default ||
-                    data.sprites.other?.["official-artwork"]?.front_default ||
-                    data.sprites.other?.["home"]?.front_default ||
-                    data.sprites.front_default;
-
-                    let pokemon = new Pokemon(data.id, data.name, img, tipos, habilidades, data.weight, data.height);
-
-                    resolve([pokemon]);
-
-                })
-
-                .catch((error: Error) => {
-
-                    reject(alert("No se ha encontrado el pokemon " + buscado));
-
-                });
+            resolve(pokemons);
 
         });
 
         return promise;
 
     }//end_buscarPokemon
-    
+
 }

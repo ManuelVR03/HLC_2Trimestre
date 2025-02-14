@@ -42,11 +42,23 @@ export class HomePage implements OnInit {
   }
 
   buscarPokemon(buscado: string) {
+    buscado = buscado.toLowerCase();
     if (buscado === '') {
       this.loadPokemons();
       return;
     }
-    this.pokemonService.buscarPokemon(buscado)
+    let pokemonsBuscar = new Array<String>();
+    for (let i = 0; i < this.namesPokemons.length; i++) {
+      if (this.namesPokemons[i].includes(buscado)) {
+        pokemonsBuscar.push(this.namesPokemons[i]);
+      }
+    }
+    if (pokemonsBuscar.length === 0) {
+      alert('No se ha encontrado ningun pokemon con ese nombre');
+      this.loadPokemons();
+      this.buscado = '';
+    }else {
+    this.pokemonService.buscarPokemon(pokemonsBuscar)
       .then((pokemons: Pokemon[]) => {
         this.pokemons = pokemons;
         console.log(this.pokemons);
@@ -54,6 +66,7 @@ export class HomePage implements OnInit {
       .catch((error: string) => {
         console.log(error);
       });
+    }
   }
 
   loadPokemons() {
