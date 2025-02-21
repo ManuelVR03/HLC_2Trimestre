@@ -1,0 +1,7 @@
+{
+  "name": "MiFirebase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

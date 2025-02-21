@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>📚 Gestión de Alumnos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>🔍 Buscar Alumno</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input [formControl]="nombre">
+          <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+        </ion-input>
+      </ion-item>
+
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button expand="full" color="success" (click)="clicBotonInsertar()">
+              ➕ Añadir Alumno
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button expand="full" color="secondary" (click)="clicBotonBuscar()">
+              🔍 Buscar
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="alumnos && alumnos.length > 0">
+    <ion-card-header>
+      <ion-card-title>📋 Lista de Alumnos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let alumno of alumnos">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>{{ alumno.nombre }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="alumnos && alumnos.length === 0">
+    <ion-card-content>
+      <ion-text color="danger">
+        <h3>⚠️ No se encontraron alumnos</h3>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

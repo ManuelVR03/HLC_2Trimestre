@@ -1,0 +1,7 @@
+{
+  "name": "Practica6.1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

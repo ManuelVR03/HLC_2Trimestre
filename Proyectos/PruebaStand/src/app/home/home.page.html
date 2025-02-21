@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ejemplo Firestore</ion-title>
+  </ion-toolbar>
+</ion-header>
+<h2>Hola</h2>
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="first_name"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="clicBotonInsertar()">Añadir Alumno</ion-button>
+</ion-content>
+
