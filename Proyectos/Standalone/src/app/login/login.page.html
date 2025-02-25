@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Iniciar Sesión</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input (input)="setEmail($event)" placeholder="Correo electrónico" type="email"></ion-input>
+      <ion-input (input)="setPassword($event)" placeholder="Contraseña" type="password"></ion-input>
+      <ion-button expand="full" (click)="login()">Ingresar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+
