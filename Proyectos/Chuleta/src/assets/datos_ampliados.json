@@ -1,0 +1,2612 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Lucia",
+            "email": "lucia@example.com",
+            "edad": 48,
+            "direccion": {
+                "calle": "Calle B",
+                "numero": 981,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "688650998",
+            "historial_compras": []
+        },
+        {
+            "id": 2,
+            "nombre": "Carlos",
+            "email": "carlos@example.com",
+            "edad": 54,
+            "direccion": {
+                "calle": "Calle C",
+                "numero": 859,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "619856790",
+            "historial_compras": []
+        },
+        {
+            "id": 3,
+            "nombre": "Ana",
+            "email": "ana@example.com",
+            "edad": 44,
+            "direccion": {
+                "calle": "Calle D",
+                "numero": 36,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "659987464",
+            "historial_compras": [
+                5031,
+                5046,
+                5013,
+                5008
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "David",
+            "email": "david@example.com",
+            "edad": 46,
+            "direccion": {
+                "calle": "Calle E",
+                "numero": 961,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "627799866",
+            "historial_compras": [
+                5027,
+                5002,
+                5035
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Sofía",
+            "email": "sofía@example.com",
+            "edad": 24,
+            "direccion": {
+                "calle": "Calle F",
+                "numero": 1,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "664920062",
+            "historial_compras": [
+                5045,
+                5046,
+                5003,
+                5011,
+                5009
+            ]
+        },
+        {
+            "id": 6,
+            "nombre": "Luis",
+            "email": "luis@example.com",
+            "edad": 28,
+            "direccion": {
+                "calle": "Calle G",
+                "numero": 949,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "695817951",
+            "historial_compras": [
+                5019,
+                5020
+            ]
+        },
+        {
+            "id": 7,
+            "nombre": "María",
+            "email": "maría@example.com",
+            "edad": 57,
+            "direccion": {
+                "calle": "Calle H",
+                "numero": 717,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "632107965",
+            "historial_compras": []
+        },
+        {
+            "id": 8,
+            "nombre": "Javier",
+            "email": "javier@example.com",
+            "edad": 44,
+            "direccion": {
+                "calle": "Calle I",
+                "numero": 13,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "660903217",
+            "historial_compras": [
+                5033,
+                5003,
+                5031,
+                5021
+            ]
+        },
+        {
+            "id": 9,
+            "nombre": "Marta",
+            "email": "marta@example.com",
+            "edad": 32,
+            "direccion": {
+                "calle": "Calle J",
+                "numero": 495,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "649667922",
+            "historial_compras": [
+                5034,
+                5041,
+                5037,
+                5002
+            ]
+        },
+        {
+            "id": 10,
+            "nombre": "Pedro",
+            "email": "pedro@example.com",
+            "edad": 61,
+            "direccion": {
+                "calle": "Calle K",
+                "numero": 503,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "602078374",
+            "historial_compras": [
+                5012,
+                5030,
+                5016,
+                5026
+            ]
+        },
+        {
+            "id": 11,
+            "nombre": "Elena",
+            "email": "elena@example.com",
+            "edad": 21,
+            "direccion": {
+                "calle": "Calle L",
+                "numero": 518,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "656658709",
+            "historial_compras": [
+                5018,
+                5022
+            ]
+        },
+        {
+            "id": 12,
+            "nombre": "Manuel",
+            "email": "manuel@example.com",
+            "edad": 43,
+            "direccion": {
+                "calle": "Calle M",
+                "numero": 484,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "640741054",
+            "historial_compras": [
+                5020,
+                5024,
+                5014,
+                5040
+            ]
+        },
+        {
+            "id": 13,
+            "nombre": "Clara",
+            "email": "clara@example.com",
+            "edad": 30,
+            "direccion": {
+                "calle": "Calle N",
+                "numero": 332,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "699435612",
+            "historial_compras": [
+                5040
+            ]
+        },
+        {
+            "id": 14,
+            "nombre": "Alberto",
+            "email": "alberto@example.com",
+            "edad": 28,
+            "direccion": {
+                "calle": "Calle O",
+                "numero": 723,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "678421686",
+            "historial_compras": []
+        },
+        {
+            "id": 15,
+            "nombre": "Paula",
+            "email": "paula@example.com",
+            "edad": 23,
+            "direccion": {
+                "calle": "Calle P",
+                "numero": 951,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "661581315",
+            "historial_compras": [
+                5048,
+                5035,
+                5026
+            ]
+        },
+        {
+            "id": 16,
+            "nombre": "Fernando",
+            "email": "fernando@example.com",
+            "edad": 26,
+            "direccion": {
+                "calle": "Calle Q",
+                "numero": 982,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "683069933",
+            "historial_compras": [
+                5020
+            ]
+        },
+        {
+            "id": 17,
+            "nombre": "Isabel",
+            "email": "isabel@example.com",
+            "edad": 65,
+            "direccion": {
+                "calle": "Calle R",
+                "numero": 755,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "680744107",
+            "historial_compras": [
+                5007,
+                5032,
+                5024
+            ]
+        },
+        {
+            "id": 18,
+            "nombre": "Rubén",
+            "email": "rubén@example.com",
+            "edad": 24,
+            "direccion": {
+                "calle": "Calle S",
+                "numero": 187,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "690427462",
+            "historial_compras": [
+                5004,
+                5012,
+                5006,
+                5038
+            ]
+        },
+        {
+            "id": 19,
+            "nombre": "Cristina",
+            "email": "cristina@example.com",
+            "edad": 30,
+            "direccion": {
+                "calle": "Calle T",
+                "numero": 475,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "649688039",
+            "historial_compras": [
+                5004,
+                5029
+            ]
+        },
+        {
+            "id": 20,
+            "nombre": "Oscar",
+            "email": "oscar@example.com",
+            "edad": 55,
+            "direccion": {
+                "calle": "Calle U",
+                "numero": 843,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "626365190",
+            "historial_compras": [
+                5019,
+                5027,
+                5035
+            ]
+        },
+        {
+            "id": 21,
+            "nombre": "Laura",
+            "email": "laura@example.com",
+            "edad": 61,
+            "direccion": {
+                "calle": "Calle V",
+                "numero": 863,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "606804535",
+            "historial_compras": [
+                5034,
+                5038,
+                5001,
+                5005
+            ]
+        },
+        {
+            "id": 22,
+            "nombre": "Sergio",
+            "email": "sergio@example.com",
+            "edad": 52,
+            "direccion": {
+                "calle": "Calle W",
+                "numero": 809,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "676643753",
+            "historial_compras": [
+                5046
+            ]
+        },
+        {
+            "id": 23,
+            "nombre": "Natalia",
+            "email": "natalia@example.com",
+            "edad": 64,
+            "direccion": {
+                "calle": "Calle X",
+                "numero": 682,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "611500190",
+            "historial_compras": [
+                5016,
+                5046,
+                5004,
+                5025
+            ]
+        },
+        {
+            "id": 24,
+            "nombre": "Adrián",
+            "email": "adrián@example.com",
+            "edad": 23,
+            "direccion": {
+                "calle": "Calle Y",
+                "numero": 654,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "623320420",
+            "historial_compras": [
+                5049,
+                5004,
+                5022
+            ]
+        },
+        {
+            "id": 25,
+            "nombre": "Patricia",
+            "email": "patricia@example.com",
+            "edad": 25,
+            "direccion": {
+                "calle": "Calle Z",
+                "numero": 552,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "651326494",
+            "historial_compras": [
+                5021,
+                5023
+            ]
+        },
+        {
+            "id": 26,
+            "nombre": "Iván",
+            "email": "iván@example.com",
+            "edad": 18,
+            "direccion": {
+                "calle": "Calle A",
+                "numero": 243,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "642069128",
+            "historial_compras": [
+                5032,
+                5016,
+                5026
+            ]
+        },
+        {
+            "id": 27,
+            "nombre": "Carmen",
+            "email": "carmen@example.com",
+            "edad": 47,
+            "direccion": {
+                "calle": "Calle B",
+                "numero": 501,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "679049602",
+            "historial_compras": [
+                5010
+            ]
+        },
+        {
+            "id": 28,
+            "nombre": "Andrés",
+            "email": "andrés@example.com",
+            "edad": 35,
+            "direccion": {
+                "calle": "Calle C",
+                "numero": 352,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "668560886",
+            "historial_compras": [
+                5030,
+                5018
+            ]
+        },
+        {
+            "id": 29,
+            "nombre": "Sara",
+            "email": "sara@example.com",
+            "edad": 48,
+            "direccion": {
+                "calle": "Calle D",
+                "numero": 161,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "643679666",
+            "historial_compras": []
+        },
+        {
+            "id": 30,
+            "nombre": "José",
+            "email": "josé@example.com",
+            "edad": 48,
+            "direccion": {
+                "calle": "Calle E",
+                "numero": 295,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "656910471",
+            "historial_compras": [
+                5005,
+                5045
+            ]
+        },
+        {
+            "id": 31,
+            "nombre": "Raquel",
+            "email": "raquel@example.com",
+            "edad": 26,
+            "direccion": {
+                "calle": "Calle F",
+                "numero": 798,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "635593631",
+            "historial_compras": [
+                5043,
+                5015
+            ]
+        },
+        {
+            "id": 32,
+            "nombre": "Daniel",
+            "email": "daniel@example.com",
+            "edad": 20,
+            "direccion": {
+                "calle": "Calle G",
+                "numero": 268,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "653456826",
+            "historial_compras": []
+        },
+        {
+            "id": 33,
+            "nombre": "Beatriz",
+            "email": "beatriz@example.com",
+            "edad": 45,
+            "direccion": {
+                "calle": "Calle H",
+                "numero": 439,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "683129685",
+            "historial_compras": [
+                5050,
+                5047,
+                5039,
+                5041,
+                5038
+            ]
+        },
+        {
+            "id": 34,
+            "nombre": "Álvaro",
+            "email": "álvaro@example.com",
+            "edad": 58,
+            "direccion": {
+                "calle": "Calle I",
+                "numero": 290,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "652280493",
+            "historial_compras": [
+                5039,
+                5007
+            ]
+        },
+        {
+            "id": 35,
+            "nombre": "Lorena",
+            "email": "lorena@example.com",
+            "edad": 30,
+            "direccion": {
+                "calle": "Calle J",
+                "numero": 613,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "634434753",
+            "historial_compras": [
+                5045,
+                5048,
+                5038,
+                5012
+            ]
+        },
+        {
+            "id": 36,
+            "nombre": "Hugo",
+            "email": "hugo@example.com",
+            "edad": 59,
+            "direccion": {
+                "calle": "Calle K",
+                "numero": 111,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "679159145",
+            "historial_compras": [
+                5033,
+                5025,
+                5022
+            ]
+        },
+        {
+            "id": 37,
+            "nombre": "Silvia",
+            "email": "silvia@example.com",
+            "edad": 60,
+            "direccion": {
+                "calle": "Calle L",
+                "numero": 354,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "618930603",
+            "historial_compras": [
+                5045,
+                5019,
+                5024
+            ]
+        },
+        {
+            "id": 38,
+            "nombre": "Francisco",
+            "email": "francisco@example.com",
+            "edad": 61,
+            "direccion": {
+                "calle": "Calle M",
+                "numero": 292,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "616876031",
+            "historial_compras": [
+                5050,
+                5013
+            ]
+        },
+        {
+            "id": 39,
+            "nombre": "Noelia",
+            "email": "noelia@example.com",
+            "edad": 43,
+            "direccion": {
+                "calle": "Calle N",
+                "numero": 692,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "604815788",
+            "historial_compras": [
+                5042,
+                5009,
+                5017,
+                5039
+            ]
+        },
+        {
+            "id": 40,
+            "nombre": "Miguel",
+            "email": "miguel@example.com",
+            "edad": 42,
+            "direccion": {
+                "calle": "Calle O",
+                "numero": 105,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "688335836",
+            "historial_compras": [
+                5023,
+                5031,
+                5040,
+                5008,
+                5050
+            ]
+        },
+        {
+            "id": 41,
+            "nombre": "Eva",
+            "email": "eva@example.com",
+            "edad": 49,
+            "direccion": {
+                "calle": "Calle P",
+                "numero": 746,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "607146980",
+            "historial_compras": []
+        },
+        {
+            "id": 42,
+            "nombre": "Alejandro",
+            "email": "alejandro@example.com",
+            "edad": 44,
+            "direccion": {
+                "calle": "Calle Q",
+                "numero": 357,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "699074044",
+            "historial_compras": [
+                5002,
+                5025,
+                5004,
+                5044
+            ]
+        },
+        {
+            "id": 43,
+            "nombre": "Victoria",
+            "email": "victoria@example.com",
+            "edad": 25,
+            "direccion": {
+                "calle": "Calle R",
+                "numero": 406,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "695688002",
+            "historial_compras": [
+                5004,
+                5036,
+                5040,
+                5043,
+                5041
+            ]
+        },
+        {
+            "id": 44,
+            "nombre": "Juan",
+            "email": "juan@example.com",
+            "edad": 18,
+            "direccion": {
+                "calle": "Calle S",
+                "numero": 68,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "628059478",
+            "historial_compras": []
+        },
+        {
+            "id": 45,
+            "nombre": "Teresa",
+            "email": "teresa@example.com",
+            "edad": 52,
+            "direccion": {
+                "calle": "Calle T",
+                "numero": 371,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "622481937",
+            "historial_compras": [
+                5042,
+                5044
+            ]
+        },
+        {
+            "id": 46,
+            "nombre": "Diego",
+            "email": "diego@example.com",
+            "edad": 60,
+            "direccion": {
+                "calle": "Calle U",
+                "numero": 64,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "672877521",
+            "historial_compras": [
+                5001,
+                5050,
+                5011
+            ]
+        },
+        {
+            "id": 47,
+            "nombre": "Rocío",
+            "email": "rocío@example.com",
+            "edad": 55,
+            "direccion": {
+                "calle": "Calle V",
+                "numero": 527,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "619479636",
+            "historial_compras": []
+        },
+        {
+            "id": 48,
+            "nombre": "Antonio",
+            "email": "antonio@example.com",
+            "edad": 37,
+            "direccion": {
+                "calle": "Calle W",
+                "numero": 144,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "672526529",
+            "historial_compras": []
+        },
+        {
+            "id": 49,
+            "nombre": "Verónica",
+            "email": "verónica@example.com",
+            "edad": 53,
+            "direccion": {
+                "calle": "Calle X",
+                "numero": 130,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "615401036",
+            "historial_compras": [
+                5010,
+                5047,
+                5018,
+                5001,
+                5033
+            ]
+        },
+        {
+            "id": 50,
+            "nombre": "Eduardo",
+            "email": "eduardo@example.com",
+            "edad": 51,
+            "direccion": {
+                "calle": "Calle Y",
+                "numero": 746,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "619046684",
+            "historial_compras": []
+        }
+    ],
+    "productos": [
+        {
+            "id": 101,
+            "nombre": "Producto 101",
+            "descripcion": "Descripción del producto 101",
+            "precio": 1258.21,
+            "stock": 60,
+            "categoria": "Electrónica",
+            "marca": "Adidas"
+        },
+        {
+            "id": 102,
+            "nombre": "Producto 102",
+            "descripcion": "Descripción del producto 102",
+            "precio": 1043.94,
+            "stock": 90,
+            "categoria": "Accesorios",
+            "marca": "LG"
+        },
+        {
+            "id": 103,
+            "nombre": "Producto 103",
+            "descripcion": "Descripción del producto 103",
+            "precio": 813.58,
+            "stock": 81,
+            "categoria": "Hogar",
+            "marca": "Logitech"
+        },
+        {
+            "id": 104,
+            "nombre": "Producto 104",
+            "descripcion": "Descripción del producto 104",
+            "precio": 1635.29,
+            "stock": 38,
+            "categoria": "Juguetes",
+            "marca": "Sony"
+        },
+        {
+            "id": 105,
+            "nombre": "Producto 105",
+            "descripcion": "Descripción del producto 105",
+            "precio": 378.22,
+            "stock": 96,
+            "categoria": "Juguetes",
+            "marca": "Dell"
+        },
+        {
+            "id": 106,
+            "nombre": "Producto 106",
+            "descripcion": "Descripción del producto 106",
+            "precio": 765.15,
+            "stock": 89,
+            "categoria": "Automoción",
+            "marca": "Nike"
+        },
+        {
+            "id": 107,
+            "nombre": "Producto 107",
+            "descripcion": "Descripción del producto 107",
+            "precio": 677.89,
+            "stock": 15,
+            "categoria": "Electrónica",
+            "marca": "HP"
+        },
+        {
+            "id": 108,
+            "nombre": "Producto 108",
+            "descripcion": "Descripción del producto 108",
+            "precio": 579.26,
+            "stock": 30,
+            "categoria": "Hogar",
+            "marca": "Dell"
+        },
+        {
+            "id": 109,
+            "nombre": "Producto 109",
+            "descripcion": "Descripción del producto 109",
+            "precio": 1405.9,
+            "stock": 20,
+            "categoria": "Hogar",
+            "marca": "Apple"
+        },
+        {
+            "id": 110,
+            "nombre": "Producto 110",
+            "descripcion": "Descripción del producto 110",
+            "precio": 1656.37,
+            "stock": 19,
+            "categoria": "Moda",
+            "marca": "Nike"
+        },
+        {
+            "id": 111,
+            "nombre": "Producto 111",
+            "descripcion": "Descripción del producto 111",
+            "precio": 478.77,
+            "stock": 67,
+            "categoria": "Accesorios",
+            "marca": "Samsung"
+        },
+        {
+            "id": 112,
+            "nombre": "Producto 112",
+            "descripcion": "Descripción del producto 112",
+            "precio": 820.38,
+            "stock": 90,
+            "categoria": "Accesorios",
+            "marca": "Razer"
+        },
+        {
+            "id": 113,
+            "nombre": "Producto 113",
+            "descripcion": "Descripción del producto 113",
+            "precio": 1876.7,
+            "stock": 62,
+            "categoria": "Deportes",
+            "marca": "Adidas"
+        },
+        {
+            "id": 114,
+            "nombre": "Producto 114",
+            "descripcion": "Descripción del producto 114",
+            "precio": 1505.64,
+            "stock": 91,
+            "categoria": "Juguetes",
+            "marca": "Dell"
+        },
+        {
+            "id": 115,
+            "nombre": "Producto 115",
+            "descripcion": "Descripción del producto 115",
+            "precio": 1009.93,
+            "stock": 10,
+            "categoria": "Electrónica",
+            "marca": "Apple"
+        },
+        {
+            "id": 116,
+            "nombre": "Producto 116",
+            "descripcion": "Descripción del producto 116",
+            "precio": 1776.71,
+            "stock": 22,
+            "categoria": "Moda",
+            "marca": "Sony"
+        },
+        {
+            "id": 117,
+            "nombre": "Producto 117",
+            "descripcion": "Descripción del producto 117",
+            "precio": 1373.56,
+            "stock": 85,
+            "categoria": "Hogar",
+            "marca": "LG"
+        },
+        {
+            "id": 118,
+            "nombre": "Producto 118",
+            "descripcion": "Descripción del producto 118",
+            "precio": 581.98,
+            "stock": 90,
+            "categoria": "Accesorios",
+            "marca": "Apple"
+        },
+        {
+            "id": 119,
+            "nombre": "Producto 119",
+            "descripcion": "Descripción del producto 119",
+            "precio": 234.96,
+            "stock": 26,
+            "categoria": "Hogar",
+            "marca": "Adidas"
+        },
+        {
+            "id": 120,
+            "nombre": "Producto 120",
+            "descripcion": "Descripción del producto 120",
+            "precio": 1653.49,
+            "stock": 100,
+            "categoria": "Deportes",
+            "marca": "Samsung"
+        },
+        {
+            "id": 121,
+            "nombre": "Producto 121",
+            "descripcion": "Descripción del producto 121",
+            "precio": 969.14,
+            "stock": 92,
+            "categoria": "Juguetes",
+            "marca": "HP"
+        },
+        {
+            "id": 122,
+            "nombre": "Producto 122",
+            "descripcion": "Descripción del producto 122",
+            "precio": 614.68,
+            "stock": 30,
+            "categoria": "Juguetes",
+            "marca": "Nike"
+        },
+        {
+            "id": 123,
+            "nombre": "Producto 123",
+            "descripcion": "Descripción del producto 123",
+            "precio": 443.28,
+            "stock": 99,
+            "categoria": "Juguetes",
+            "marca": "Adidas"
+        },
+        {
+            "id": 124,
+            "nombre": "Producto 124",
+            "descripcion": "Descripción del producto 124",
+            "precio": 607.24,
+            "stock": 3,
+            "categoria": "Juguetes",
+            "marca": "Adidas"
+        },
+        {
+            "id": 125,
+            "nombre": "Producto 125",
+            "descripcion": "Descripción del producto 125",
+            "precio": 544.28,
+            "stock": 1,
+            "categoria": "Hogar",
+            "marca": "LG"
+        },
+        {
+            "id": 126,
+            "nombre": "Producto 126",
+            "descripcion": "Descripción del producto 126",
+            "precio": 505.13,
+            "stock": 12,
+            "categoria": "Electrónica",
+            "marca": "Adidas"
+        },
+        {
+            "id": 127,
+            "nombre": "Producto 127",
+            "descripcion": "Descripción del producto 127",
+            "precio": 1618.64,
+            "stock": 4,
+            "categoria": "Deportes",
+            "marca": "Nike"
+        },
+        {
+            "id": 128,
+            "nombre": "Producto 128",
+            "descripcion": "Descripción del producto 128",
+            "precio": 1156.9,
+            "stock": 38,
+            "categoria": "Electrónica",
+            "marca": "Dell"
+        },
+        {
+            "id": 129,
+            "nombre": "Producto 129",
+            "descripcion": "Descripción del producto 129",
+            "precio": 1746.04,
+            "stock": 78,
+            "categoria": "Automoción",
+            "marca": "Apple"
+        },
+        {
+            "id": 130,
+            "nombre": "Producto 130",
+            "descripcion": "Descripción del producto 130",
+            "precio": 1711.88,
+            "stock": 12,
+            "categoria": "Hogar",
+            "marca": "Sony"
+        },
+        {
+            "id": 131,
+            "nombre": "Producto 131",
+            "descripcion": "Descripción del producto 131",
+            "precio": 1657.13,
+            "stock": 13,
+            "categoria": "Automoción",
+            "marca": "Nike"
+        },
+        {
+            "id": 132,
+            "nombre": "Producto 132",
+            "descripcion": "Descripción del producto 132",
+            "precio": 1150.06,
+            "stock": 9,
+            "categoria": "Moda",
+            "marca": "Razer"
+        },
+        {
+            "id": 133,
+            "nombre": "Producto 133",
+            "descripcion": "Descripción del producto 133",
+            "precio": 379.66,
+            "stock": 88,
+            "categoria": "Automoción",
+            "marca": "Adidas"
+        },
+        {
+            "id": 134,
+            "nombre": "Producto 134",
+            "descripcion": "Descripción del producto 134",
+            "precio": 1751.21,
+            "stock": 11,
+            "categoria": "Accesorios",
+            "marca": "LG"
+        },
+        {
+            "id": 135,
+            "nombre": "Producto 135",
+            "descripcion": "Descripción del producto 135",
+            "precio": 146.87,
+            "stock": 68,
+            "categoria": "Accesorios",
+            "marca": "LG"
+        },
+        {
+            "id": 136,
+            "nombre": "Producto 136",
+            "descripcion": "Descripción del producto 136",
+            "precio": 1051.83,
+            "stock": 95,
+            "categoria": "Accesorios",
+            "marca": "HP"
+        },
+        {
+            "id": 137,
+            "nombre": "Producto 137",
+            "descripcion": "Descripción del producto 137",
+            "precio": 1712.23,
+            "stock": 47,
+            "categoria": "Automoción",
+            "marca": "Samsung"
+        },
+        {
+            "id": 138,
+            "nombre": "Producto 138",
+            "descripcion": "Descripción del producto 138",
+            "precio": 660.27,
+            "stock": 57,
+            "categoria": "Hogar",
+            "marca": "Sony"
+        },
+        {
+            "id": 139,
+            "nombre": "Producto 139",
+            "descripcion": "Descripción del producto 139",
+            "precio": 191.89,
+            "stock": 70,
+            "categoria": "Electrónica",
+            "marca": "HP"
+        },
+        {
+            "id": 140,
+            "nombre": "Producto 140",
+            "descripcion": "Descripción del producto 140",
+            "precio": 1882.2,
+            "stock": 61,
+            "categoria": "Accesorios",
+            "marca": "Sony"
+        },
+        {
+            "id": 141,
+            "nombre": "Producto 141",
+            "descripcion": "Descripción del producto 141",
+            "precio": 928.04,
+            "stock": 24,
+            "categoria": "Deportes",
+            "marca": "Razer"
+        },
+        {
+            "id": 142,
+            "nombre": "Producto 142",
+            "descripcion": "Descripción del producto 142",
+            "precio": 1262.99,
+            "stock": 98,
+            "categoria": "Deportes",
+            "marca": "Nike"
+        },
+        {
+            "id": 143,
+            "nombre": "Producto 143",
+            "descripcion": "Descripción del producto 143",
+            "precio": 1944.02,
+            "stock": 16,
+            "categoria": "Hogar",
+            "marca": "Dell"
+        },
+        {
+            "id": 144,
+            "nombre": "Producto 144",
+            "descripcion": "Descripción del producto 144",
+            "precio": 552.32,
+            "stock": 50,
+            "categoria": "Moda",
+            "marca": "Apple"
+        },
+        {
+            "id": 145,
+            "nombre": "Producto 145",
+            "descripcion": "Descripción del producto 145",
+            "precio": 925.12,
+            "stock": 48,
+            "categoria": "Hogar",
+            "marca": "Adidas"
+        },
+        {
+            "id": 146,
+            "nombre": "Producto 146",
+            "descripcion": "Descripción del producto 146",
+            "precio": 1293.86,
+            "stock": 84,
+            "categoria": "Moda",
+            "marca": "Nike"
+        },
+        {
+            "id": 147,
+            "nombre": "Producto 147",
+            "descripcion": "Descripción del producto 147",
+            "precio": 1735.11,
+            "stock": 55,
+            "categoria": "Moda",
+            "marca": "Adidas"
+        },
+        {
+            "id": 148,
+            "nombre": "Producto 148",
+            "descripcion": "Descripción del producto 148",
+            "precio": 696.32,
+            "stock": 22,
+            "categoria": "Automoción",
+            "marca": "Samsung"
+        },
+        {
+            "id": 149,
+            "nombre": "Producto 149",
+            "descripcion": "Descripción del producto 149",
+            "precio": 1972.08,
+            "stock": 37,
+            "categoria": "Moda",
+            "marca": "Sony"
+        },
+        {
+            "id": 150,
+            "nombre": "Producto 150",
+            "descripcion": "Descripción del producto 150",
+            "precio": 1377.26,
+            "stock": 18,
+            "categoria": "Juguetes",
+            "marca": "Razer"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 5001,
+            "usuario_id": 3,
+            "productos": [
+                {
+                    "producto_id": 111,
+                    "cantidad": 1,
+                    "precio_unitario": 478.77
+                }
+            ],
+            "fecha": "2025-02-25",
+            "total": 478.77,
+            "estado": "Entregado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle D",
+                "numero": 36,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5002,
+            "usuario_id": 48,
+            "productos": [
+                {
+                    "producto_id": 106,
+                    "cantidad": 4,
+                    "precio_unitario": 765.15
+                }
+            ],
+            "fecha": "2025-02-19",
+            "total": 3060.6,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle W",
+                "numero": 144,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5003,
+            "usuario_id": 18,
+            "productos": [
+                {
+                    "producto_id": 115,
+                    "cantidad": 1,
+                    "precio_unitario": 1009.93
+                },
+                {
+                    "producto_id": 102,
+                    "cantidad": 3,
+                    "precio_unitario": 1043.94
+                },
+                {
+                    "producto_id": 106,
+                    "cantidad": 4,
+                    "precio_unitario": 765.15
+                }
+            ],
+            "fecha": "2025-02-10",
+            "total": 7202.35,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle S",
+                "numero": 187,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5004,
+            "usuario_id": 2,
+            "productos": [
+                {
+                    "producto_id": 112,
+                    "cantidad": 5,
+                    "precio_unitario": 820.38
+                },
+                {
+                    "producto_id": 137,
+                    "cantidad": 3,
+                    "precio_unitario": 1712.23
+                }
+            ],
+            "fecha": "2025-02-24",
+            "total": 9238.59,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle C",
+                "numero": 859,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5005,
+            "usuario_id": 23,
+            "productos": [
+                {
+                    "producto_id": 141,
+                    "cantidad": 5,
+                    "precio_unitario": 928.04
+                },
+                {
+                    "producto_id": 130,
+                    "cantidad": 1,
+                    "precio_unitario": 1711.88
+                }
+            ],
+            "fecha": "2025-02-12",
+            "total": 6352.08,
+            "estado": "Pendiente",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle X",
+                "numero": 682,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5006,
+            "usuario_id": 25,
+            "productos": [
+                {
+                    "producto_id": 129,
+                    "cantidad": 1,
+                    "precio_unitario": 1746.04
+                },
+                {
+                    "producto_id": 110,
+                    "cantidad": 2,
+                    "precio_unitario": 1656.37
+                }
+            ],
+            "fecha": "2025-02-07",
+            "total": 5058.78,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle Z",
+                "numero": 552,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5007,
+            "usuario_id": 48,
+            "productos": [
+                {
+                    "producto_id": 122,
+                    "cantidad": 2,
+                    "precio_unitario": 614.68
+                },
+                {
+                    "producto_id": 135,
+                    "cantidad": 2,
+                    "precio_unitario": 146.87
+                },
+                {
+                    "producto_id": 121,
+                    "cantidad": 4,
+                    "precio_unitario": 969.14
+                }
+            ],
+            "fecha": "2025-02-07",
+            "total": 5399.66,
+            "estado": "Entregado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle W",
+                "numero": 144,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5008,
+            "usuario_id": 47,
+            "productos": [
+                {
+                    "producto_id": 146,
+                    "cantidad": 2,
+                    "precio_unitario": 1293.86
+                },
+                {
+                    "producto_id": 102,
+                    "cantidad": 5,
+                    "precio_unitario": 1043.94
+                },
+                {
+                    "producto_id": 137,
+                    "cantidad": 2,
+                    "precio_unitario": 1712.23
+                }
+            ],
+            "fecha": "2025-02-06",
+            "total": 11231.88,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle V",
+                "numero": 527,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5009,
+            "usuario_id": 5,
+            "productos": [
+                {
+                    "producto_id": 144,
+                    "cantidad": 4,
+                    "precio_unitario": 552.32
+                },
+                {
+                    "producto_id": 113,
+                    "cantidad": 4,
+                    "precio_unitario": 1876.7
+                },
+                {
+                    "producto_id": 139,
+                    "cantidad": 2,
+                    "precio_unitario": 191.89
+                }
+            ],
+            "fecha": "2025-02-02",
+            "total": 10099.86,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle F",
+                "numero": 1,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5010,
+            "usuario_id": 39,
+            "productos": [
+                {
+                    "producto_id": 123,
+                    "cantidad": 3,
+                    "precio_unitario": 443.28
+                },
+                {
+                    "producto_id": 131,
+                    "cantidad": 1,
+                    "precio_unitario": 1657.13
+                },
+                {
+                    "producto_id": 149,
+                    "cantidad": 3,
+                    "precio_unitario": 1972.08
+                }
+            ],
+            "fecha": "2025-02-20",
+            "total": 8903.21,
+            "estado": "Pendiente",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle N",
+                "numero": 692,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5011,
+            "usuario_id": 23,
+            "productos": [
+                {
+                    "producto_id": 106,
+                    "cantidad": 1,
+                    "precio_unitario": 765.15
+                },
+                {
+                    "producto_id": 144,
+                    "cantidad": 4,
+                    "precio_unitario": 552.32
+                }
+            ],
+            "fecha": "2025-02-23",
+            "total": 2974.43,
+            "estado": "Enviado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle X",
+                "numero": 682,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5012,
+            "usuario_id": 40,
+            "productos": [
+                {
+                    "producto_id": 138,
+                    "cantidad": 4,
+                    "precio_unitario": 660.27
+                }
+            ],
+            "fecha": "2025-02-17",
+            "total": 2641.08,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle O",
+                "numero": 105,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5013,
+            "usuario_id": 28,
+            "productos": [
+                {
+                    "producto_id": 146,
+                    "cantidad": 5,
+                    "precio_unitario": 1293.86
+                },
+                {
+                    "producto_id": 143,
+                    "cantidad": 2,
+                    "precio_unitario": 1944.02
+                },
+                {
+                    "producto_id": 136,
+                    "cantidad": 1,
+                    "precio_unitario": 1051.83
+                }
+            ],
+            "fecha": "2025-02-15",
+            "total": 11409.17,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle C",
+                "numero": 352,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5014,
+            "usuario_id": 3,
+            "productos": [
+                {
+                    "producto_id": 105,
+                    "cantidad": 3,
+                    "precio_unitario": 378.22
+                },
+                {
+                    "producto_id": 135,
+                    "cantidad": 5,
+                    "precio_unitario": 146.87
+                },
+                {
+                    "producto_id": 120,
+                    "cantidad": 5,
+                    "precio_unitario": 1653.49
+                }
+            ],
+            "fecha": "2025-02-17",
+            "total": 10136.46,
+            "estado": "Pendiente",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle D",
+                "numero": 36,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5015,
+            "usuario_id": 47,
+            "productos": [
+                {
+                    "producto_id": 120,
+                    "cantidad": 3,
+                    "precio_unitario": 1653.49
+                },
+                {
+                    "producto_id": 120,
+                    "cantidad": 1,
+                    "precio_unitario": 1653.49
+                }
+            ],
+            "fecha": "2025-02-22",
+            "total": 6613.96,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle V",
+                "numero": 527,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5016,
+            "usuario_id": 45,
+            "productos": [
+                {
+                    "producto_id": 118,
+                    "cantidad": 4,
+                    "precio_unitario": 581.98
+                },
+                {
+                    "producto_id": 133,
+                    "cantidad": 1,
+                    "precio_unitario": 379.66
+                },
+                {
+                    "producto_id": 136,
+                    "cantidad": 5,
+                    "precio_unitario": 1051.83
+                }
+            ],
+            "fecha": "2025-02-07",
+            "total": 7966.73,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle T",
+                "numero": 371,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5017,
+            "usuario_id": 21,
+            "productos": [
+                {
+                    "producto_id": 114,
+                    "cantidad": 1,
+                    "precio_unitario": 1505.64
+                },
+                {
+                    "producto_id": 115,
+                    "cantidad": 2,
+                    "precio_unitario": 1009.93
+                },
+                {
+                    "producto_id": 121,
+                    "cantidad": 5,
+                    "precio_unitario": 969.14
+                }
+            ],
+            "fecha": "2025-02-02",
+            "total": 8371.2,
+            "estado": "Pendiente",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle V",
+                "numero": 863,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5018,
+            "usuario_id": 13,
+            "productos": [
+                {
+                    "producto_id": 148,
+                    "cantidad": 3,
+                    "precio_unitario": 696.32
+                }
+            ],
+            "fecha": "2025-02-20",
+            "total": 2088.96,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle N",
+                "numero": 332,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5019,
+            "usuario_id": 31,
+            "productos": [
+                {
+                    "producto_id": 108,
+                    "cantidad": 4,
+                    "precio_unitario": 579.26
+                }
+            ],
+            "fecha": "2025-02-27",
+            "total": 2317.04,
+            "estado": "Cancelado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle F",
+                "numero": 798,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5020,
+            "usuario_id": 43,
+            "productos": [
+                {
+                    "producto_id": 140,
+                    "cantidad": 5,
+                    "precio_unitario": 1882.2
+                },
+                {
+                    "producto_id": 116,
+                    "cantidad": 1,
+                    "precio_unitario": 1776.71
+                },
+                {
+                    "producto_id": 108,
+                    "cantidad": 2,
+                    "precio_unitario": 579.26
+                }
+            ],
+            "fecha": "2025-02-17",
+            "total": 12346.23,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle R",
+                "numero": 406,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5021,
+            "usuario_id": 32,
+            "productos": [
+                {
+                    "producto_id": 137,
+                    "cantidad": 1,
+                    "precio_unitario": 1712.23
+                },
+                {
+                    "producto_id": 132,
+                    "cantidad": 1,
+                    "precio_unitario": 1150.06
+                }
+            ],
+            "fecha": "2025-02-28",
+            "total": 2862.29,
+            "estado": "Pendiente",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle G",
+                "numero": 268,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5022,
+            "usuario_id": 27,
+            "productos": [
+                {
+                    "producto_id": 135,
+                    "cantidad": 4,
+                    "precio_unitario": 146.87
+                }
+            ],
+            "fecha": "2025-02-18",
+            "total": 587.48,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle B",
+                "numero": 501,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5023,
+            "usuario_id": 7,
+            "productos": [
+                {
+                    "producto_id": 104,
+                    "cantidad": 3,
+                    "precio_unitario": 1635.29
+                }
+            ],
+            "fecha": "2025-02-21",
+            "total": 4905.87,
+            "estado": "Entregado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle H",
+                "numero": 717,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5024,
+            "usuario_id": 50,
+            "productos": [
+                {
+                    "producto_id": 123,
+                    "cantidad": 5,
+                    "precio_unitario": 443.28
+                }
+            ],
+            "fecha": "2025-03-03",
+            "total": 2216.4,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle Y",
+                "numero": 746,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5025,
+            "usuario_id": 15,
+            "productos": [
+                {
+                    "producto_id": 121,
+                    "cantidad": 2,
+                    "precio_unitario": 969.14
+                }
+            ],
+            "fecha": "2025-02-27",
+            "total": 1938.28,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle P",
+                "numero": 951,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5026,
+            "usuario_id": 41,
+            "productos": [
+                {
+                    "producto_id": 116,
+                    "cantidad": 5,
+                    "precio_unitario": 1776.71
+                }
+            ],
+            "fecha": "2025-03-03",
+            "total": 8883.55,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle P",
+                "numero": 746,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5027,
+            "usuario_id": 44,
+            "productos": [
+                {
+                    "producto_id": 140,
+                    "cantidad": 1,
+                    "precio_unitario": 1882.2
+                },
+                {
+                    "producto_id": 114,
+                    "cantidad": 5,
+                    "precio_unitario": 1505.64
+                }
+            ],
+            "fecha": "2025-02-22",
+            "total": 9410.4,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle S",
+                "numero": 68,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5028,
+            "usuario_id": 18,
+            "productos": [
+                {
+                    "producto_id": 113,
+                    "cantidad": 2,
+                    "precio_unitario": 1876.7
+                }
+            ],
+            "fecha": "2025-02-14",
+            "total": 3753.4,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle S",
+                "numero": 187,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5029,
+            "usuario_id": 49,
+            "productos": [
+                {
+                    "producto_id": 129,
+                    "cantidad": 1,
+                    "precio_unitario": 1746.04
+                }
+            ],
+            "fecha": "2025-02-26",
+            "total": 1746.04,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle X",
+                "numero": 130,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5030,
+            "usuario_id": 23,
+            "productos": [
+                {
+                    "producto_id": 137,
+                    "cantidad": 3,
+                    "precio_unitario": 1712.23
+                }
+            ],
+            "fecha": "2025-02-26",
+            "total": 5136.69,
+            "estado": "Pendiente",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle X",
+                "numero": 682,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5031,
+            "usuario_id": 42,
+            "productos": [
+                {
+                    "producto_id": 144,
+                    "cantidad": 2,
+                    "precio_unitario": 552.32
+                }
+            ],
+            "fecha": "2025-02-14",
+            "total": 1104.64,
+            "estado": "Enviado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle Q",
+                "numero": 357,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5032,
+            "usuario_id": 17,
+            "productos": [
+                {
+                    "producto_id": 108,
+                    "cantidad": 2,
+                    "precio_unitario": 579.26
+                },
+                {
+                    "producto_id": 138,
+                    "cantidad": 2,
+                    "precio_unitario": 660.27
+                },
+                {
+                    "producto_id": 109,
+                    "cantidad": 4,
+                    "precio_unitario": 1405.9
+                }
+            ],
+            "fecha": "2025-02-26",
+            "total": 8102.66,
+            "estado": "Cancelado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle R",
+                "numero": 755,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5033,
+            "usuario_id": 36,
+            "productos": [
+                {
+                    "producto_id": 135,
+                    "cantidad": 3,
+                    "precio_unitario": 146.87
+                },
+                {
+                    "producto_id": 131,
+                    "cantidad": 3,
+                    "precio_unitario": 1657.13
+                }
+            ],
+            "fecha": "2025-02-15",
+            "total": 5412.0,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle K",
+                "numero": 111,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5034,
+            "usuario_id": 37,
+            "productos": [
+                {
+                    "producto_id": 115,
+                    "cantidad": 2,
+                    "precio_unitario": 1009.93
+                }
+            ],
+            "fecha": "2025-02-04",
+            "total": 2019.86,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle L",
+                "numero": 354,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5035,
+            "usuario_id": 8,
+            "productos": [
+                {
+                    "producto_id": 143,
+                    "cantidad": 2,
+                    "precio_unitario": 1944.02
+                }
+            ],
+            "fecha": "2025-02-17",
+            "total": 3888.04,
+            "estado": "Enviado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle I",
+                "numero": 13,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5036,
+            "usuario_id": 39,
+            "productos": [
+                {
+                    "producto_id": 144,
+                    "cantidad": 1,
+                    "precio_unitario": 552.32
+                },
+                {
+                    "producto_id": 105,
+                    "cantidad": 4,
+                    "precio_unitario": 378.22
+                },
+                {
+                    "producto_id": 123,
+                    "cantidad": 2,
+                    "precio_unitario": 443.28
+                }
+            ],
+            "fecha": "2025-02-18",
+            "total": 2951.76,
+            "estado": "Enviado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle N",
+                "numero": 692,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5037,
+            "usuario_id": 12,
+            "productos": [
+                {
+                    "producto_id": 137,
+                    "cantidad": 2,
+                    "precio_unitario": 1712.23
+                },
+                {
+                    "producto_id": 146,
+                    "cantidad": 2,
+                    "precio_unitario": 1293.86
+                },
+                {
+                    "producto_id": 127,
+                    "cantidad": 3,
+                    "precio_unitario": 1618.64
+                }
+            ],
+            "fecha": "2025-02-05",
+            "total": 10868.1,
+            "estado": "Cancelado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle M",
+                "numero": 484,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5038,
+            "usuario_id": 40,
+            "productos": [
+                {
+                    "producto_id": 121,
+                    "cantidad": 4,
+                    "precio_unitario": 969.14
+                },
+                {
+                    "producto_id": 133,
+                    "cantidad": 5,
+                    "precio_unitario": 379.66
+                },
+                {
+                    "producto_id": 139,
+                    "cantidad": 4,
+                    "precio_unitario": 191.89
+                }
+            ],
+            "fecha": "2025-02-28",
+            "total": 6542.42,
+            "estado": "Cancelado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle O",
+                "numero": 105,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5039,
+            "usuario_id": 5,
+            "productos": [
+                {
+                    "producto_id": 121,
+                    "cantidad": 4,
+                    "precio_unitario": 969.14
+                },
+                {
+                    "producto_id": 115,
+                    "cantidad": 4,
+                    "precio_unitario": 1009.93
+                }
+            ],
+            "fecha": "2025-02-08",
+            "total": 7916.28,
+            "estado": "Cancelado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle F",
+                "numero": 1,
+                "ciudad": "Valencia",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5040,
+            "usuario_id": 10,
+            "productos": [
+                {
+                    "producto_id": 140,
+                    "cantidad": 2,
+                    "precio_unitario": 1882.2
+                },
+                {
+                    "producto_id": 116,
+                    "cantidad": 1,
+                    "precio_unitario": 1776.71
+                }
+            ],
+            "fecha": "2025-02-21",
+            "total": 5541.11,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle K",
+                "numero": 503,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5041,
+            "usuario_id": 13,
+            "productos": [
+                {
+                    "producto_id": 125,
+                    "cantidad": 1,
+                    "precio_unitario": 544.28
+                }
+            ],
+            "fecha": "2025-02-17",
+            "total": 544.28,
+            "estado": "Cancelado",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle N",
+                "numero": 332,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5042,
+            "usuario_id": 12,
+            "productos": [
+                {
+                    "producto_id": 116,
+                    "cantidad": 2,
+                    "precio_unitario": 1776.71
+                },
+                {
+                    "producto_id": 147,
+                    "cantidad": 4,
+                    "precio_unitario": 1735.11
+                },
+                {
+                    "producto_id": 144,
+                    "cantidad": 1,
+                    "precio_unitario": 552.32
+                }
+            ],
+            "fecha": "2025-02-12",
+            "total": 11046.18,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Calle M",
+                "numero": 484,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5043,
+            "usuario_id": 11,
+            "productos": [
+                {
+                    "producto_id": 109,
+                    "cantidad": 5,
+                    "precio_unitario": 1405.9
+                },
+                {
+                    "producto_id": 141,
+                    "cantidad": 4,
+                    "precio_unitario": 928.04
+                },
+                {
+                    "producto_id": 101,
+                    "cantidad": 2,
+                    "precio_unitario": 1258.21
+                }
+            ],
+            "fecha": "2025-02-23",
+            "total": 13258.08,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle L",
+                "numero": 518,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5044,
+            "usuario_id": 18,
+            "productos": [
+                {
+                    "producto_id": 128,
+                    "cantidad": 4,
+                    "precio_unitario": 1156.9
+                },
+                {
+                    "producto_id": 112,
+                    "cantidad": 2,
+                    "precio_unitario": 820.38
+                }
+            ],
+            "fecha": "2025-02-25",
+            "total": 6268.36,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle S",
+                "numero": 187,
+                "ciudad": "Granada",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5045,
+            "usuario_id": 13,
+            "productos": [
+                {
+                    "producto_id": 119,
+                    "cantidad": 1,
+                    "precio_unitario": 234.96
+                },
+                {
+                    "producto_id": 113,
+                    "cantidad": 2,
+                    "precio_unitario": 1876.7
+                }
+            ],
+            "fecha": "2025-02-02",
+            "total": 3988.36,
+            "estado": "Pendiente",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle N",
+                "numero": 332,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5046,
+            "usuario_id": 31,
+            "productos": [
+                {
+                    "producto_id": 108,
+                    "cantidad": 3,
+                    "precio_unitario": 579.26
+                }
+            ],
+            "fecha": "2025-02-26",
+            "total": 1737.78,
+            "estado": "Pendiente",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle F",
+                "numero": 798,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5047,
+            "usuario_id": 46,
+            "productos": [
+                {
+                    "producto_id": 137,
+                    "cantidad": 1,
+                    "precio_unitario": 1712.23
+                },
+                {
+                    "producto_id": 122,
+                    "cantidad": 4,
+                    "precio_unitario": 614.68
+                }
+            ],
+            "fecha": "2025-02-14",
+            "total": 4170.95,
+            "estado": "Pendiente",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle U",
+                "numero": 64,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5048,
+            "usuario_id": 15,
+            "productos": [
+                {
+                    "producto_id": 142,
+                    "cantidad": 1,
+                    "precio_unitario": 1262.99
+                },
+                {
+                    "producto_id": 125,
+                    "cantidad": 1,
+                    "precio_unitario": 544.28
+                }
+            ],
+            "fecha": "2025-02-14",
+            "total": 1807.27,
+            "estado": "Entregado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle P",
+                "numero": 951,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5049,
+            "usuario_id": 9,
+            "productos": [
+                {
+                    "producto_id": 104,
+                    "cantidad": 5,
+                    "precio_unitario": 1635.29
+                },
+                {
+                    "producto_id": 149,
+                    "cantidad": 1,
+                    "precio_unitario": 1972.08
+                },
+                {
+                    "producto_id": 103,
+                    "cantidad": 4,
+                    "precio_unitario": 813.58
+                }
+            ],
+            "fecha": "2025-02-28",
+            "total": 13402.85,
+            "estado": "Entregado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle J",
+                "numero": 495,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5050,
+            "usuario_id": 40,
+            "productos": [
+                {
+                    "producto_id": 115,
+                    "cantidad": 5,
+                    "precio_unitario": 1009.93
+                },
+                {
+                    "producto_id": 118,
+                    "cantidad": 4,
+                    "precio_unitario": 581.98
+                }
+            ],
+            "fecha": "2025-03-01",
+            "total": 7377.57,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle O",
+                "numero": 105,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        }
+    ]
+}

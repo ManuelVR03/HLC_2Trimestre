@@ -1,0 +1,6 @@
+ionic start $nombre blank
+ionic g page $nombre
+ionic serve
+npm install @ionic/storage-angular
+npm install -g json-server
+json-server --watch $nombre.json

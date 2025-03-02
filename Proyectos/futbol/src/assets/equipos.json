@@ -1,0 +1,307 @@
+{
+  "primera_division": [
+    {
+      "nombre": "Real Madrid",
+      "entrenador": "Carlo Ancelotti",
+      "estadio": "Santiago Bernabéu",
+      "anio_fundacion": 1902,
+      "puntos": 60,
+      "ciudad": "Madrid",
+      "jugadores": ["Vinícius Jr.", "Jude Bellingham", "Luka Modrić", "Thibaut Courtois"]
+    },
+    {
+      "nombre": "FC Barcelona",
+      "entrenador": "Xavi Hernández",
+      "estadio": "Estadio Olímpico Lluís Companys",
+      "anio_fundacion": 1899,
+      "puntos": 55,
+      "ciudad": "Barcelona",
+      "jugadores": ["Robert Lewandowski", "Pedri", "Frenkie de Jong", "Marc-André ter Stegen"]
+    },
+    {
+      "nombre": "Atlético de Madrid",
+      "entrenador": "Diego Simeone",
+      "estadio": "Cívitas Metropolitano",
+      "anio_fundacion": 1903,
+      "puntos": 53,
+      "ciudad": "Madrid",
+      "jugadores": ["Antoine Griezmann", "Álvaro Morata", "Jan Oblak", "Koke"]
+    },
+    {
+      "nombre": "Sevilla FC",
+      "entrenador": "Quique Sánchez Flores",
+      "estadio": "Ramón Sánchez-Pizjuán",
+      "anio_fundacion": 1890,
+      "puntos": 42,
+      "ciudad": "Sevilla",
+      "jugadores": ["Jesús Navas", "Youssef En-Nesyri", "Sergio Ramos", "Ivan Rakitić"]
+    },
+    {
+      "nombre": "Real Sociedad",
+      "entrenador": "Imanol Alguacil",
+      "estadio": "Reale Arena",
+      "anio_fundacion": 1909,
+      "puntos": 50,
+      "ciudad": "San Sebastián",
+      "jugadores": ["Mikel Oyarzabal", "David Silva", "Takefusa Kubo", "Alexander Sørloth"]
+    },
+    {
+      "nombre": "Athletic Club",
+      "entrenador": "Ernesto Valverde",
+      "estadio": "San Mamés",
+      "anio_fundacion": 1898,
+      "puntos": 48,
+      "ciudad": "Bilbao",
+      "jugadores": ["Iñaki Williams", "Nico Williams", "Iker Muniain", "Unai Simón"]
+    },
+    {
+      "nombre": "Villarreal CF",
+      "entrenador": "Marcelino García Toral",
+      "estadio": "Estadio de la Cerámica",
+      "anio_fundacion": 1923,
+      "puntos": 46,
+      "ciudad": "Villarreal",
+      "jugadores": ["Gerard Moreno", "Dani Parejo", "Pau Torres", "Yeremy Pino"]
+    },
+    {
+      "nombre": "Real Betis",
+      "entrenador": "Manuel Pellegrini",
+      "estadio": "Benito Villamarín",
+      "anio_fundacion": 1907,
+      "puntos": 44,
+      "ciudad": "Sevilla",
+      "jugadores": ["Nabil Fekir", "Borja Iglesias", "Sergio Canales", "Claudio Bravo"]
+    },
+    {
+      "nombre": "Celta de Vigo",
+      "entrenador": "Rafa Benítez",
+      "estadio": "Abanca Balaídos",
+      "anio_fundacion": 1923,
+      "puntos": 39,
+      "ciudad": "Vigo",
+      "jugadores": ["Iago Aspas", "Gabri Veiga", "Fran Beltrán", "Joseph Aidoo"]
+    },
+    {
+      "nombre": "Osasuna",
+      "entrenador": "Jagoba Arrasate",
+      "estadio": "El Sadar",
+      "anio_fundacion": 1920,
+      "puntos": 38,
+      "ciudad": "Pamplona",
+      "jugadores": ["Chimy Ávila", "Ante Budimir", "David García", "Aimar Oroz"]
+    }
+  ],
+  "segunda_division": [
+     {
+      "nombre": "Real Valladolid",
+      "entrenador": "Paulo Pezzolano",
+      "estadio": "José Zorrilla",
+      "anio_fundacion": 1928,
+      "puntos": 45,
+      "ciudad": "Valladolid",
+      "jugadores": ["Shon Weissman", "Roque Mesa", "Sergio Asenjo", "Javi Sánchez"]
+    },
+    {
+      "nombre": "Levante UD",
+      "entrenador": "Javi Calleja",
+      "estadio": "Ciutat de València",
+      "anio_fundacion": 1909,
+      "puntos": 43,
+      "ciudad": "Valencia",
+      "jugadores": ["José Campaña", "Roger Martí", "Dani Cárdenas", "Rúben Vezo"]
+    },
+    {
+      "nombre": "SD Eibar",
+      "entrenador": "Gaizka Garitano",
+      "estadio": "Ipurua",
+      "anio_fundacion": 1940,
+      "puntos": 42,
+      "ciudad": "Eibar",
+      "jugadores": ["Stoichkov", "Ager Aketxe", "Matheus Pereira", "Yoel Rodríguez"]
+    },
+    {
+      "nombre": "Real Zaragoza",
+      "entrenador": "Fran Escribá",
+      "estadio": "La Romareda",
+      "anio_fundacion": 1932,
+      "puntos": 40,
+      "ciudad": "Zaragoza",
+      "jugadores": ["Iván Azón", "Manu Molina", "Giuliano Simeone", "Cristian Álvarez"]
+    },
+    {
+      "nombre": "CD Leganés",
+      "entrenador": "Borja Jiménez",
+      "estadio": "Butarque",
+      "anio_fundacion": 1928,
+      "puntos": 38,
+      "ciudad": "Leganés",
+      "jugadores": ["Jorge Miramón", "Sergio González", "Raba", "Dani Jiménez"]
+    },
+    {
+      "nombre": "Sporting de Gijón",
+      "entrenador": "Miguel Ángel Ramírez",
+      "estadio": "El Molinón",
+      "anio_fundacion": 1905,
+      "puntos": 36,
+      "ciudad": "Gijón",
+      "jugadores": ["Pedro Díaz", "Guille Rosas", "Cristo González", "Diego Mariño"]
+    },
+    {
+      "nombre": "Burgos CF",
+      "entrenador": "Julián Calero",
+      "estadio": "El Plantío",
+      "anio_fundacion": 1922,
+      "puntos": 35,
+      "ciudad": "Burgos",
+      "jugadores": ["Álex Bermejo", "Miki Muñoz", "Borja González", "Raúl Navarro"]
+    },
+    {
+      "nombre": "CD Tenerife",
+      "entrenador": "Luis Miguel Ramis",
+      "estadio": "Heliodoro Rodríguez López",
+      "anio_fundacion": 1912,
+      "puntos": 34,
+      "ciudad": "Santa Cruz de Tenerife",
+      "jugadores": ["Enric Gallego", "Samuel Shashoua", "Aitor Sanz", "Mo Dauda"]
+    },
+    {
+      "nombre": "Albacete Balompié",
+      "entrenador": "Rubén Albés",
+      "estadio": "Carlos Belmonte",
+      "anio_fundacion": 1940,
+      "puntos": 33,
+      "ciudad": "Albacete",
+      "jugadores": ["Manu Fuster", "Riki Rodríguez", "Diego Altube", "Juan Antonio Ros"]
+    }
+  ],
+  "tercera_division": [
+    {
+      "nombre": "Numancia",
+      "entrenador": "Javi Moreno",
+      "estadio": "Los Pajaritos",
+      "anio_fundacion": 1945,
+      "puntos": 38,
+      "ciudad": "Soria",
+      "jugadores": ["David González", "Javi Bonilla", "Pablo Muñoz", "Carlos Gutiérrez"]
+    },
+    {
+      "nombre": "CD Teruel",
+      "entrenador": "Víctor Bravo",
+      "estadio": "Pinilla",
+      "anio_fundacion": 1946,
+      "puntos": 36,
+      "ciudad": "Teruel",
+      "jugadores": ["Borja Romero", "Javi Hernández", "Óscar Gómez", "Sergio García"]
+    },
+    {
+      "nombre": "Ourense CF",
+      "entrenador": "Rubén Domínguez",
+      "estadio": "O Couto",
+      "anio_fundacion": 1952,
+      "puntos": 34,
+      "ciudad": "Ourense",
+      "jugadores": ["Diego García", "Álvaro Sánchez", "Pablo Rojas", "Jesús Varela"]
+    },
+    {
+      "nombre": "Arandina CF",
+      "entrenador": "Jonathan Prado",
+      "estadio": "El Montecillo",
+      "anio_fundacion": 1987,
+      "puntos": 30,
+      "ciudad": "Aranda de Duero",
+      "jugadores": ["Hugo Sanz", "Cristian Moreno", "Alex Ortega", "Jorge Fernández"]
+    },
+    {
+      "nombre": "CF Talavera",
+      "entrenador": "Pedro Díaz",
+      "estadio": "El Prado",
+      "anio_fundacion": 1948,
+      "puntos": 29,
+      "ciudad": "Talavera de la Reina",
+      "jugadores": ["Manu Ramírez", "Iván Serrano", "Dani Martín", "Rubén Fernández"]
+    },
+    {
+      "nombre": "Linares Deportivo",
+      "entrenador": "Alberto González",
+      "estadio": "Linarejos",
+      "anio_fundacion": 2009,
+      "puntos": 28,
+      "ciudad": "Linares",
+      "jugadores": ["Fran Carnicer", "Lolo González", "Dani Perejón", "Álex Meléndez"]
+    },
+    {
+      "nombre": "Pontevedra CF",
+      "entrenador": "Antonio Fernández",
+      "estadio": "Pasarón",
+      "anio_fundacion": 1941,
+      "puntos": 27,
+      "ciudad": "Pontevedra",
+      "jugadores": ["Borja Domínguez", "Jaime Santos", "Charles Dias", "Álvaro Bustos"]
+    },
+    {
+      "nombre": "Gimnástica Segoviana",
+      "entrenador": "Ramsés Gil",
+      "estadio": "La Albuera",
+      "anio_fundacion": 1928,
+      "puntos": 26,
+      "ciudad": "Segovia",
+      "jugadores": ["Chema Moreno", "Rubén López", "Javi Marcos", "Álvaro de Frutos"]
+    },
+    {
+      "nombre": "UD San Fernando",
+      "entrenador": "Nacho Castro",
+      "estadio": "Maspalomas",
+      "anio_fundacion": 1992,
+      "puntos": 25,
+      "ciudad": "San Bartolomé de Tirajana",
+      "jugadores": ["Alejandro Ramos", "Tana", "Jonathan Quintero", "Antonio Domínguez"]
+    },
+    {
+      "nombre": "Atlético Saguntino",
+      "entrenador": "Dani Ponz",
+      "estadio": "Nou Camp de Morvedre",
+      "anio_fundacion": 1951,
+      "puntos": 24,
+      "ciudad": "Sagunto",
+      "jugadores": ["Pau Franch", "Raúl Tavares", "Borja Antón", "Dani Martínez"]
+    },
+    {
+      "nombre": "CD El Ejido",
+      "entrenador": "David Cabello",
+      "estadio": "Santo Domingo",
+      "anio_fundacion": 1969,
+      "puntos": 23,
+      "ciudad": "El Ejido",
+      "jugadores": ["Jesús Rubio", "Alberto González", "Samu Corral", "Víctor Pérez"]
+    },
+    {
+      "nombre": "Marbella FC",
+      "entrenador": "Fabián Rivera",
+      "estadio": "Estadio Municipal de Marbella",
+      "anio_fundacion": 1997,
+      "puntos": 22,
+      "ciudad": "Marbella",
+      "jugadores": ["Javi Moreno", "José Antonio", "Alejandro Rodríguez", "Carlos Blanco"]
+    },
+    {
+      "nombre": "San Roque de Lepe",
+      "entrenador": "Antonio Fernández",
+      "estadio": "Ciudad de Lepe",
+      "anio_fundacion": 1956,
+      "puntos": 21,
+      "ciudad": "Lepe",
+      "jugadores": ["Miguel Reina", "Iván Gil", "Dani González", "Sergio Bernal"]
+    },
+    {
+      "nombre": "CD Toledo",
+      "entrenador": "Manu Calleja",
+      "estadio": "Salto del Caballo",
+      "anio_fundacion": 1928,
+      "puntos": 20,
+      "ciudad": "Toledo",
+      "jugadores": ["Pedro Pérez", "José Ángel", "Rubén Martín", "Álvaro Torres"]
+    }
+  ]
+}
+
+

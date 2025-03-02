@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title slot="start" *ngIf="storageType == 'primera_division'">
+      LALIGA EA SPORTS
+    </ion-title>
+    <ion-title slot="start" *ngIf="storageType == 'segunda_division'">
+      LALIGA HYPERMOTION
+    </ion-title>
+    <ion-title slot="start" *ngIf="storageType == 'tercera_division'">
+      Tercera División de España
+    </ion-title>
+    <ion-select [(ngModel)]="storageType" (ionChange)="guardarOpcion($event)" interface="popover">
+      <ion-select-option value="primera_division">Primera Division</ion-select-option>
+      <ion-select-option value="segunda_division">Segunda División</ion-select-option>
+      <ion-select-option value="tercera_division">Tercera División</ion-select-option>
+    </ion-select>
+    <ion-buttons slot="end">
+      <ion-button (click)="abrirAlertBusqueda()" *ngIf="!buscando"><ion-icon name="search"></ion-icon></ion-button>
+      <ion-button (click)="abrirModalBusqueda()" *ngIf="!buscando"><ion-icon name="search-circle-outline"></ion-icon></ion-button>
+      <ion-button (click)="loadDivision()" *ngIf="buscando"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="4" *ngFor="let equipo of coleccion">
+        <ion-card (click)="goToDetalles(equipo)">
+          <ion-card-header>
+            <ion-icon name="football" size="large"></ion-icon>
+            <ion-card-title>{{ equipo.nombre }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-card-subtitle>Ciudad: {{ equipo.ciudad }}</ion-card-subtitle>
+            <ion-card-subtitle>Puntos: {{ equipo.puntos }}</ion-card-subtitle>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goToFirstPage()">Primera</ion-button>
+        <ion-button (click)="goToPreviousPage()">Anterior</ion-button>
+      </ion-buttons>
+      <ion-title>Página {{currentPage}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="goToNextPage()">Siguiente</ion-button>
+        <ion-button (click)="goToLastPage()">Última</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

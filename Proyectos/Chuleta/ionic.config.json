@@ -1,0 +1,7 @@
+{
+  "name": "Chuleta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

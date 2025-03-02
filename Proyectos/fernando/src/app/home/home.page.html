@@ -1,0 +1,64 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+
+    <!-- Alineación de elementos:
+  slot="start" → Coloca elementos al inicio (izquierda).
+  slot="end" → Coloca elementos al final (derecha).
+  slot="primary" → Para los botones principales.
+  <ion-buttons> sirve para agrupar botones y ubicarlos correctamente. -->
+
+    <!-- Selector de almacenamiento alineado en el centro -->
+    <ion-item slot="start">
+      <ion-label>Fuente</ion-label>
+      <ion-select [(ngModel)]="storageType" (ionChange)="guardarOpcion($event)" interface="popover">
+        <ion-select-option *ngIf="!storageType" value="medicos" selected>MEDICOS</ion-select-option>
+        <ion-select-option value="medicos">MEDICOS</ion-select-option>
+        <ion-select-option value="policias">POLICIAS</ion-select-option>
+        <ion-select-option value="bomberos">BOMBEROS</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+
+    <!-- Grupo de botones alineados a la derecha -->
+    <ion-buttons slot="end">
+      <ion-button>
+        Botón 1
+      </ion-button>
+      <ion-button>
+        Botón 2
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+ 
+  <ion-card *ngFor="let item of items">
+    <ion-grid>
+      <ion-row>
+        <ion-col size=8>{{item.nombre}}, {{item.apellido}}</ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+
+  <ion-footer>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-button (click)="goToFirstPage()">Primera</ion-button>
+        <ion-button (click)="goToPreviousPage()">Anterior</ion-button>
+      </ion-buttons>
+      <ion-title>Página {{currentPage}}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="goToNextPage()">Siguiente</ion-button>
+        <ion-button (click)="goToLastPage()">Última</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-footer>
+
+
+</ion-content>

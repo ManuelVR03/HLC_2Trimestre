@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles del Equipo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="equipo">
+    <ion-card-header>
+      <ion-card-title>{{ equipo.nombre }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle>Entrenador: {{ equipo.entrenador }}</ion-card-subtitle>
+      <ion-card-subtitle>Estadio: {{ equipo.estadio }}</ion-card-subtitle>
+      <ion-card-subtitle>Año de fundación: {{ equipo.anio_fundacion }}</ion-card-subtitle>
+      <ion-card-subtitle>Puntos: {{ equipo.puntos }}</ion-card-subtitle>
+      <ion-card-subtitle>Ciudad: {{ equipo.ciudad }}</ion-card-subtitle>
+      <ion-card-subtitle>Jugadores: </ion-card-subtitle>
+      <ion-list>
+        <ion-item *ngFor="let jugador of equipo.jugadores">
+          <ion-icon name="football" size="large"></ion-icon><ion-label>{{ jugador }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

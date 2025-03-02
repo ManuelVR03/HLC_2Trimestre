@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngIf="usuario">
+    <ion-card-header>
+      <ion-card-title>Usuario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Nombre:</strong> {{ usuario.nombre }}</p>
+      <p><strong>Email:</strong> {{ usuario.email }}</p>
+      <p><strong>Teléfono:</strong> {{ usuario.telefono }}</p>
+      <p><strong>Dirección:</strong> {{ usuario.direccion.calle }}, {{ usuario.direccion.numero }}, {{ usuario.direccion.ciudad }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="producto">
+    <ion-card-header>
+      <ion-card-title>Producto</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>Nombre:</strong> {{ producto.nombre }}</p>
+      <p><strong>Descripción:</strong> {{ producto.descripcion }}</p>
+      <p><strong>Precio:</strong> {{ producto.precio }}</p>
+      <p><strong>Stock:</strong> {{ producto.stock }}</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="pedido">
+    <ion-card-header>
+      <ion-card-title>Pedido</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p><strong>ID Pedido:</strong> {{ pedido.id }}</p>
+      <p><strong>Fecha:</strong> {{ pedido.fecha }}</p>
+      <p><strong>Total:</strong> {{ pedido.total }}</p>
+      <p><strong>Estado:</strong> {{ pedido.estado }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

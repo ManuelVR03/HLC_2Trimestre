@@ -1,0 +1,240 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Lucia",
+            "email": "lucia@example.com",
+            "edad": 25,
+            "direccion": {
+                "calle": "Calle A",
+                "numero": 123,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            },
+            "telefono": "123456789",
+            "historial_compras": [
+                5001,
+                5003,
+                5006
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "Carlos",
+            "email": "carlos@example.com",
+            "edad": 30,
+            "direccion": {
+                "calle": "Calle B",
+                "numero": 456,
+                "ciudad": "Madrid",
+                "pais": "España"
+            },
+            "telefono": "987654321",
+            "historial_compras": [
+                5002
+            ]
+        },
+        {
+            "id": 3,
+            "nombre": "Ana",
+            "email": "ana@example.com",
+            "edad": 28,
+            "direccion": {
+                "calle": "Avenida C",
+                "numero": 789,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            },
+            "telefono": "654321987",
+            "historial_compras": [
+                5004
+            ]
+        },
+        {
+            "id": 4,
+            "nombre": "David",
+            "email": "david@example.com",
+            "edad": 35,
+            "direccion": {
+                "calle": "Calle D",
+                "numero": 159,
+                "ciudad": "Valencia",
+                "pais": "España"
+            },
+            "telefono": "321987654",
+            "historial_compras": [
+                5005
+            ]
+        },
+        {
+            "id": 5,
+            "nombre": "Sofía",
+            "email": "sofia@example.com",
+            "edad": 27,
+            "direccion": {
+                "calle": "Calle E",
+                "numero": 753,
+                "ciudad": "Granada",
+                "pais": "España"
+            },
+            "telefono": "147258369",
+            "historial_compras": []
+        },
+        {
+            "id": 6,
+            "nombre": "Luis",
+            "email": "luis@example.com",
+            "edad": 40,
+            "direccion": {
+                "calle": "Calle F",
+                "numero": 951,
+                "ciudad": "Bilbao",
+                "pais": "España"
+            },
+            "telefono": "963852741",
+            "historial_compras": []
+        }
+    ],
+    "productos": [
+        {
+            "id": 101,
+            "nombre": "Laptop",
+            "descripcion": "Laptop de alta gama con procesador i7 y 16GB RAM",
+            "precio": 1200.50,
+            "stock": 10,
+            "categoria": "Electrónica",
+            "marca": "Dell"
+        },
+        {
+            "id": 102,
+            "nombre": "Auriculares",
+            "descripcion": "Auriculares inalámbricos con cancelación de ruido",
+            "precio": 80.99,
+            "stock": 50,
+            "categoria": "Audio",
+            "marca": "Sony"
+        },
+        {
+            "id": 103,
+            "nombre": "Smartphone",
+            "descripcion": "Smartphone con pantalla OLED y 128GB de almacenamiento",
+            "precio": 699.99,
+            "stock": 25,
+            "categoria": "Electrónica",
+            "marca": "Samsung"
+        },
+        {
+            "id": 104,
+            "nombre": "Teclado mecánico",
+            "descripcion": "Teclado con switches mecánicos y retroiluminación RGB",
+            "precio": 120.75,
+            "stock": 30,
+            "categoria": "Accesorios",
+            "marca": "Logitech"
+        },
+        {
+            "id": 105,
+            "nombre": "Monitor 27 pulgadas",
+            "descripcion": "Monitor 144Hz con resolución QHD",
+            "precio": 349.99,
+            "stock": 18,
+            "categoria": "Electrónica",
+            "marca": "LG"
+        },
+        {
+            "id": 106,
+            "nombre": "Ratón gaming",
+            "descripcion": "Ratón ergonómico con sensor de alta precisión",
+            "precio": 65.99,
+            "stock": 40,
+            "categoria": "Accesorios",
+            "marca": "Razer"
+        }
+    ],
+    "pedidos": [
+        {
+            "id": 5001,
+            "usuario_id": 1,
+            "productos": [
+                {
+                    "producto_id": 101,
+                    "cantidad": 1,
+                    "precio_unitario": 1200.50
+                }
+            ],
+            "fecha": "2025-02-28",
+            "total": 1200.50,
+            "estado": "Enviado",
+            "metodo_pago": "Tarjeta de crédito",
+            "direccion_envio": {
+                "calle": "Calle A",
+                "numero": 123,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5002,
+            "usuario_id": 2,
+            "productos": [
+                {
+                    "producto_id": 102,
+                    "cantidad": 2,
+                    "precio_unitario": 80.99
+                }
+            ],
+            "fecha": "2025-02-28",
+            "total": 161.98,
+            "estado": "Pendiente",
+            "metodo_pago": "PayPal",
+            "direccion_envio": {
+                "calle": "Calle B",
+                "numero": 456,
+                "ciudad": "Madrid",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5003,
+            "usuario_id": 1,
+            "productos": [
+                {
+                    "producto_id": 103,
+                    "cantidad": 1,
+                    "precio_unitario": 699.99
+                }
+            ],
+            "fecha": "2025-03-01",
+            "total": 699.99,
+            "estado": "Entregado",
+            "metodo_pago": "Bizum",
+            "direccion_envio": {
+                "calle": "Calle A",
+                "numero": 123,
+                "ciudad": "Sevilla",
+                "pais": "España"
+            }
+        },
+        {
+            "id": 5004,
+            "usuario_id": 3,
+            "productos": [
+                {
+                    "producto_id": 104,
+                    "cantidad": 1,
+                    "precio_unitario": 120.75
+                }
+            ],
+            "fecha": "2025-03-02",
+            "total": 120.75,
+            "estado": "Cancelado",
+            "metodo_pago": "Tarjeta débito",
+            "direccion_envio": {
+                "calle": "Avenida C",
+                "numero": 789,
+                "ciudad": "Barcelona",
+                "pais": "España"
+            }
+        }
+    ]
+}
