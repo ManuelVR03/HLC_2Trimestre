@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Contacto & Ubicación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="form-container">
+    <h2>Contáctanos 📩</h2>
+    
+    <form (submit)="enviarCorreo($event)">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" name="user_name" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo Electrónico</ion-label>
+        <ion-input type="email" name="user_email" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mensaje</ion-label>
+        <ion-textarea name="message" required></ion-textarea>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Ubicación</ion-label>
+        <ion-input name="location" [(ngModel)]="ubicacion" readonly></ion-input>
+        <ion-button fill="clear" (click)="getUbicacion()">
+          <ion-icon name="navigate-outline"></ion-icon>
+        </ion-button>
+      </ion-item>
+
+      <ion-button expand="block" type="submit" color="success">
+        Enviar Mensaje
+      </ion-button>
+    </form>
+  </div>
+</ion-content>

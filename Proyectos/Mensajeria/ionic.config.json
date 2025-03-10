@@ -1,0 +1,7 @@
+{
+  "name": "Mensajeria",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

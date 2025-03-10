@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Serie } from '../modelo/Serie';
 
 @Component({
   selector: 'app-detalles',
@@ -8,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetallesPage implements OnInit {
 
-  constructor() { }
+  serie?: Serie;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+  
+    this.route.queryParams.subscribe(params => {
+  
+      if (params['serie']) {
+  
+        this.serie = JSON.parse(params['serie']);
+      }
+
+    });
+    
   }
 
 }

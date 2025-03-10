@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Busqueda</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()"><ion-icon name="close-circle-outline"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <ion-item>
+
+    <ion-label position="floating">Genero</ion-label>
+
+    <ion-select [(ngModel)]="genero" placeholder="Selecciona un genero">
+
+      <ion-select-option *ngFor="let genero of generos" [value]="genero">
+
+        {{ genero }}
+
+      </ion-select-option>
+
+    </ion-select>
+
+  </ion-item>
+
+  <ion-item>
+
+    <ion-label position="floating">Puntos</ion-label>
+
+    <ion-input [(ngModel)]="puntos" placeholder="Introduce puntos" type="number"></ion-input>
+
+  </ion-item>
+
+  <ion-button expand="block" (click)="search()">Buscar</ion-button>
+
+</ion-content>

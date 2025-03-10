@@ -1,0 +1,54 @@
+{
+  "netflix": [
+    { "id": 1, "title": "Stranger Things", "genre": "Sci-Fi", "year": 2016, "seasons": 4, "rating": 8.7 },
+    { "id": 2, "title": "The Witcher", "genre": "Fantasy", "year": 2019, "seasons": 3, "rating": 7.9 },
+    { "id": 3, "title": "Black Mirror", "genre": "Drama", "year": 2011, "seasons": 6, "rating": 8.8 },
+    { "id": 4, "title": "Money Heist", "genre": "Crime", "year": 2017, "seasons": 5, "rating": 8.2 },
+    { "id": 5, "title": "Dark", "genre": "Mystery", "year": 2017, "seasons": 3, "rating": 8.8 },
+    { "id": 6, "title": "Narcos", "genre": "Crime", "year": 2015, "seasons": 3, "rating": 8.8 },
+    { "id": 7, "title": "Bridgerton", "genre": "Romance", "year": 2020, "seasons": 2, "rating": 7.3 },
+    { "id": 8, "title": "Squid Game", "genre": "Thriller", "year": 2021, "seasons": 1, "rating": 8.0 },
+    { "id": 9, "title": "Lucifer", "genre": "Fantasy", "year": 2016, "seasons": 6, "rating": 8.1 },
+    { "id": 10, "title": "The Umbrella Academy", "genre": "Sci-Fi", "year": 2019, "seasons": 3, "rating": 7.9 },
+    { "id": 11, "title": "You", "genre": "Thriller", "year": 2018, "seasons": 4, "rating": 7.7 },
+    { "id": 12, "title": "The Crown", "genre": "Drama", "year": 2016, "seasons": 6, "rating": 8.6 },
+    { "id": 13, "title": "The Sandman", "genre": "Fantasy", "year": 2022, "seasons": 1, "rating": 7.8 },
+    { "id": 14, "title": "Ozark", "genre": "Crime", "year": 2017, "seasons": 4, "rating": 8.5 },
+    { "id": 15, "title": "13 Reasons Why", "genre": "Drama", "year": 2017, "seasons": 4, "rating": 7.5 }
+  ],
+  "amazon": [
+    { "id": 1, "title": "The Boys", "genre": "Action", "year": 2019, "seasons": 4, "rating": 8.7 },
+    { "id": 2, "title": "Invincible", "genre": "Animation", "year": 2021, "seasons": 2, "rating": 8.9 },
+    { "id": 3, "title": "Jack Ryan", "genre": "Thriller", "year": 2018, "seasons": 4, "rating": 8.0 },
+    { "id": 4, "title": "Good Omens", "genre": "Fantasy", "year": 2019, "seasons": 2, "rating": 8.0 },
+    { "id": 5, "title": "Reacher", "genre": "Action", "year": 2022, "seasons": 2, "rating": 8.1 },
+    { "id": 6, "title": "The Wheel of Time", "genre": "Fantasy", "year": 2021, "seasons": 2, "rating": 7.1 },
+    { "id": 7, "title": "The Expanse", "genre": "Sci-Fi", "year": 2015, "seasons": 6, "rating": 8.5 },
+    { "id": 8, "title": "Fleabag", "genre": "Comedy", "year": 2016, "seasons": 2, "rating": 8.7 },
+    { "id": 9, "title": "The Man in the High Castle", "genre": "Sci-Fi", "year": 2015, "seasons": 4, "rating": 7.9 },
+    { "id": 10, "title": "Hanna", "genre": "Thriller", "year": 2019, "seasons": 3, "rating": 7.6 },
+    { "id": 11, "title": "The Marvelous Mrs. Maisel", "genre": "Comedy", "year": 2017, "seasons": 5, "rating": 8.7 },
+    { "id": 12, "title": "Upload", "genre": "Sci-Fi", "year": 2020, "seasons": 3, "rating": 7.9 },
+    { "id": 13, "title": "Bosch", "genre": "Crime", "year": 2014, "seasons": 7, "rating": 8.4 },
+    { "id": 14, "title": "Carnival Row", "genre": "Fantasy", "year": 2019, "seasons": 2, "rating": 7.8 },
+    { "id": 15, "title": "Undone", "genre": "Animation", "year": 2019, "seasons": 2, "rating": 8.2 }
+  ],
+  "max": [
+    { "id": 1, "title": "Game of Thrones", "genre": "Fantasy", "year": 2011, "seasons": 8, "rating": 9.2 },
+    { "id": 2, "title": "Euphoria", "genre": "Drama", "year": 2019, "seasons": 2, "rating": 8.4 },
+    { "id": 3, "title": "House of the Dragon", "genre": "Fantasy", "year": 2022, "seasons": 1, "rating": 8.5 },
+    { "id": 4, "title": "The Last of Us", "genre": "Drama", "year": 2023, "seasons": 1, "rating": 9.0 },
+    { "id": 5, "title": "Westworld", "genre": "Sci-Fi", "year": 2016, "seasons": 4, "rating": 8.6 },
+    { "id": 6, "title": "True Detective", "genre": "Crime", "year": 2014, "seasons": 4, "rating": 8.9 },
+    { "id": 7, "title": "Barry", "genre": "Comedy", "year": 2018, "seasons": 4, "rating": 8.4 },
+    { "id": 8, "title": "Chernobyl", "genre": "Drama", "year": 2019, "seasons": 1, "rating": 9.4 },
+    { "id": 9, "title": "Rome", "genre": "Drama", "year": 2005, "seasons": 2, "rating": 8.7 },
+    { "id": 10, "title": "Band of Brothers", "genre": "War", "year": 2001, "seasons": 1, "rating": 9.4 },
+    { "id": 11, "title": "The Sopranos", "genre": "Crime", "year": 1999, "seasons": 6, "rating": 9.2 },
+    { "id": 12, "title": "Six Feet Under", "genre": "Drama", "year": 2001, "seasons": 5, "rating": 8.7 },
+    { "id": 13, "title": "Veep", "genre": "Comedy", "year": 2012, "seasons": 7, "rating": 8.3 },
+    { "id": 14, "title": "Watchmen", "genre": "Sci-Fi", "year": 2019, "seasons": 1, "rating": 8.2 },
+    { "id": 15, "title": "Boardwalk Empire", "genre": "Crime", "year": 2010, "seasons": 5, "rating": 8.6 }
+  ]
+}
+

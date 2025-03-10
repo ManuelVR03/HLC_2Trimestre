@@ -1,13 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>detalles</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles de la Serie</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">detalles</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card *ngIf="serie">
+    <ion-card-header>
+      <ion-card-title>{{ serie.id }} - {{ serie.title }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-card-subtitle>Género: {{ serie.genre }}</ion-card-subtitle>
+      <ion-card-subtitle>Año: {{ serie.year }}</ion-card-subtitle>
+      <ion-card-subtitle>Temporadas: {{ serie.seasons }}</ion-card-subtitle>
+      <ion-card-subtitle>Puntuación: {{ serie.rating }}</ion-card-subtitle>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
